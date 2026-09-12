@@ -13,7 +13,7 @@
 ## Global Constraints
 
 - **Zero cost (spec 1.1):** only free, open-source packages from PyPI. No paid services, no API keys, no accounts.
-- **Git (owner's rule):** the owner makes every commit. An agent executing this plan must **never** run `git add`, `git commit`, or `git push`. At each "Commit (owner)" step, stop and show the owner the exact commands.
+- **Git (owner's rule):** the agent stages the task's files with `git add`; the owner makes every commit and push. An agent must **never** run `git commit` or `git push`. At each "Commit (owner)" step, stage the files, stop, and give the owner the commit and push commands.
 - **Code style (owner's rule):** the code must not look AI-generated. Only comment where something isn't obvious, in short casual lowercase style (e.g. `# wiki sends big lists in chunks, keep asking till done`). No formal docstrings, no spec references in code. The code blocks below show the logic; write them in this style.
 - **Politeness (spec 4.2):** no faster than one request per second (`REQUEST_DELAY_SECONDS = 1.1`), with a descriptive User-Agent.
 - **Only the official API:** use `https://sekiro-shadows-die-twice.fandom.com/api.php` only. The wiki's normal web pages sit behind a bot check; never try to get around it.
