@@ -1,0 +1,21 @@
+[project]
+name = "game-rag"
+version = "0.1.0"
+description = "game_rag: a free, open-model RAG learning project"
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "requests>=2.34.2",
+]
+
+[build-system]
+requires = ["uv_build>=0.9.0,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]

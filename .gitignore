@@ -15,3 +15,7 @@ venv/
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# Raw wiki downloads: large and re-creatable with `uv run python -m game_rag collect`
+data/raw/
+*.tmp
