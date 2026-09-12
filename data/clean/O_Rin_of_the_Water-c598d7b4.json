@@ -1,0 +1,30 @@
+{
+  "title": "O'Rin of the Water",
+  "url": "https://sekiro-shadows-die-twice.fandom.com/wiki/O'Rin_of_the_Water",
+  "categories": [
+    "Mini-Bosses",
+    "Enemies"
+  ],
+  "sections": [
+    {
+      "heading": "Introduction",
+      "level": 1,
+      "text": "O'Rin of the Water (水生のお凜, O'Rin of Mibu) is an optional Mini-Boss with two Deathblow Counters.\nSobbing, she plays a shamisen, occasionaly asking anyone passing by for the whereabouts of her beloved Lord Sakuza.\nHer sad melody enchants Jinzaemon Kumano."
+    },
+    {
+      "heading": "Location",
+      "level": 2,
+      "text": "- Water Mill: on the path to the Wedding Cave Door, before the house of the Head Priest."
+    },
+    {
+      "heading": "Dialogue",
+      "level": 2,
+      "text": "From a distance | O'Rin: Urrhh... Nngh... Ahhh... Ahhh...\nWalking pst her | O'Rin: You pretend not to see me...? Ohh... You, too... How dare you hide Lord Sakuza from me!\nTalking | O'Rin: (Crying)\n\"Say nothing\" | Wolf: .........\nO'Rin: (Crying)\n\"Ask why she cries\" | Wolf: Why are you crying?\nO'Rin: Because... I'm sad...\nWolf: What are you sad about?\nO'Rin: I don't know where Lord Sakuza is. Or what he's doing.\nIt breaks my heart. If I can't see him, I'd at least like to know... But... No matter how many letters I send, he never writes me back. And no one will tell me where he is. Actually, sir... Can you tell me? Where is Lord Sakuza?\n\"I don't know\" | Wolf: I don't know.\nO'Rin: Ohh... You're a liar, too... Why must everyone hide him from me?\n\"Say Nothing\" | Wolf: .........\nO'Rin: Ohh... so you won't tell me either... Why must everyone hide him from me?\nEngaging in combat | O'Rin: Ohh... You, too... How dare you hide Lord Sakuza from me!\nAfter first deathblow | O'Rin: Ohh, Lord Sakuza... If you won't come to me... At least, instead...\nKilling Wolf | O'Rin: Why would you hide him from me?!\nWhen killed (if Jinzaemon is at the Water Mill) | O'Rin: Ohhh... I'm so glad. Lord Sakuza...brought me that man in his stead... Oh, and he's right over there...\nWhen killed (if Jinzaemon isn't at the Water Mill) | O'Rin: Uwaaah!"
+    },
+    {
+      "heading": "Notes",
+      "level": 2,
+      "text": "- Killing her before Jinzaemon reaches the Water Mill will turn him hostile, making his Jinza's Jizo Statue unobtainable in the current playthrough.\n- The \"Breath of Life - Shadow\" latent skill that she drops stacks with the \"Breath of Life - Light\" combat art of the Shinobi Arts tree.\n- Prior to patch 1.03, it was possible to start her fight with a free stealth Deathblow, by jumping on her head from behind."
+    }
+  ]
+}

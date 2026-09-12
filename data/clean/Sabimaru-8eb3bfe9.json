@@ -1,0 +1,44 @@
+{
+  "title": "Sabimaru",
+  "url": "https://sekiro-shadows-die-twice.fandom.com/wiki/Sabimaru",
+  "categories": [
+    "Prosthetic Tools"
+  ],
+  "sections": [
+    {
+      "heading": "In-Game Description",
+      "level": 2,
+      "text": "A Prosthetic Tool made with the blade Sabimaru, allowing for a quick series of attacks together with the sword.\nThe blue, poisonous rust on Sabimaru's blade applies \"Poison\" status abnormality. Wielded in wars of old, the blade's blue rust was used to drive off inhuman Okami warrior women. Even now, it is likely to be effective against their descendants."
+    },
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Inflicts Poison build-up, which can't be guarded nor deflected, on enemies. When Poison enters the body, the enemy will start losing Vitality over time and won't be able to recover Posture.\nParticularly effective against Snake Eyes Shirafuji, O'Rin of the Water and the Okami Warriors."
+    },
+    {
+      "heading": "Ability",
+      "level": 2,
+      "text": "(Repeated) Combo: Perform a flurry of attacks with both the sword and Samibaru. Sabimaru's attacks inflict Poison status abnormality. Costs 1 1 Spirit Emblem to use."
+    },
+    {
+      "heading": "Improved Sabimaru",
+      "level": 2,
+      "text": "An improved Sabimaru with a special mechanism for unleashing the blade. Costs spirit emblems to use.\nDue to the revised mechanism, one can fluidly swap between two separate sets of attacks as desired.\nHas a blue rust poison applied to the blade that eats into enemies' defense and inflicts \"Poison\" status abnormality.\nPrerequisites | Spinning Shuriken\nSpring-load Axe\nUpgrade Cost | 600 600\nScrap Iron x4\nScrap Magnetite x4\nSpirit Emblem Cost | 1 1 Spirit Emblem\n(Repeated) Combo\nPerform a flurry of attacks with both the sword and Samibaru.\n(During Combo) Combo Change Attack:\nPerform a sword attack that toggles the current attack combo. This turns your body and can also be used for evasion."
+    },
+    {
+      "heading": "Piercing Sabimaru",
+      "level": 2,
+      "text": "A further improved Sabimaru with a finely sharpened blade. Costs Spirit Emblems to use.\nRepeated attacks with the newly sharpened edge of the blade will damage an enemy's Vitality and Posture, even through their guard.\nThe blue rust poison on Sabimaru's blade eats its way into enemies and applies Poison status.\nPrerequisites | Spinning Shuriken\nSpring-load Axe\nImproved Sabimaru\nUpgrade Cost | 1500 1500\nScrap Iron x8\nScrap Magnetite x4\nAdamantite Scrap x4\nSpirit Emblem Cost | 1 1 Spirit Emblem\nCombo\nPerform a flurry of attacks with both your sword and Sabimaru. Sabimaru's sharpened blade will damage enemy Vitality and Posture, even if guarded.\n(During Combo) Combo Change Attack:\nPerform a sword attack that toggles the current attack combo. This turns your body and can also be used for evasion."
+    },
+    {
+      "heading": "Lazulite Sabimaru",
+      "level": 2,
+      "text": "Sabimaru blessed with the favor of the Fountainhead Lapis Lazuli. Costs Spirit Emblems to use.\nThe combination of Lapis Lazuli and the rusted blue blade produces a poisonous mist with every swing.\nDissolving the Lapis Lazuli over the blade caused the ancient blue rust to bubble to the blade's surface.\nPrerequisites | Spinning Shuriken\nSpring-load Axe\nImproved Sabimaru\nPiercing Sabimaru\nor\nSpring-load Firecracker\nDouble Divine Abduction\nLong Spark\nSparking Axe\nPurple Fume Spark\nUpgrade Cost | 3000 3000\nLapis Lazuli x2\nAdamantite Scrap x4\nFulminated Mercury x4\nScrap Magnetite x8\nScrap Iron x12\nSpirit Emblem Cost | 1 1 Spirit Emblem\nCombo\nPerform a flurry of attacks with both the sword and Sabimaru. A Poison mist erupts from every swing of Sabimaru.\n(During Combo) Combo Change Attack:\nPerform a sword attack that toggles the current attack combo. This turns your body and can also be used for evasion."
+    },
+    {
+      "heading": "See also",
+      "level": 2,
+      "text": "- Kusabimaru"
+    }
+  ]
+}

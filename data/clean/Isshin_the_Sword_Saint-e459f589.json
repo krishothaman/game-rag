@@ -1,0 +1,30 @@
+{
+  "title": "Isshin, the Sword Saint",
+  "url": "https://sekiro-shadows-die-twice.fandom.com/wiki/Isshin,_the_Sword_Saint",
+  "categories": [
+    "Bosses",
+    "Enemies"
+  ],
+  "sections": [
+    {
+      "heading": "Part 1",
+      "level": 2,
+      "text": "Wolf meets Genichiro for the last time in the Silvergrass Field where they first fought. Upon defeat, Genichiro uses the black Mortal Blade to summon a younger version of Isshin Ashina from the beyond.\n- Perilous Thrust: crouches down then thrusts with his katana.\n- Death's Thrust: lunges forward thrusting for a long distance. He anticipates Wolf with this move whenever he uses an item.\n- Perilous Sweep: circles behind the target then sweeps the ground.\n- Perilous Grab: runs toward Wolf attempting to grab him. If connected he throws Wolf on the ground before stabbing him in the chest.\n- Perilous Attack Follow Up: delivers an overhead smash while airborne and connects with one of the following, based on his action:\ncrouches down means a Perilous Thrust.\nturns his body clockwise means a Perilous Sweep.\nturns his body anti-clockwise means a quick upward cut.\n- Empowered Mortal Draw: channels for 2 seconds before unleashing an undulant black power slash. He may use it twice if the target was close. He always starts with this move.\n- Mortal Draw: steps back and shoots twice, follows by a quicker Mortal Draw.\n- Advance: two vertical slashes while stepping forth. If the move was not deflected, he will do an elbow strike and slash again.\n- Low Slash: two horizontal slashes with slight delay. He may use Floating Passage right after.\n- Closing Tide: slides and shoots an arrow or two concurrently then roll forward, slashing once.\n- Iaitjutsu: a quick drawn strike with short closing distance.\n- Two-hit Combo: spins his body slashing and kicks right after, then follows up with Empowered Mortal Draw.\n- Floating Passage: a deadly combo of 7 hits starting with him rearing back with the last guard-breaking strike. He may follows up with this move after any combo, along with a delayed Perilous Thrust.\nGenichiro has completely abandoned his lightning attacks in favor of the newly found Black Mortal Blade and a more nuanced Floating Passage at the end of any combo. Though, most of his attacks are the same as his past encounters, therefore the same tactic against his sword strikes can be applied here. As of version 1.04, there exists a bug which renders him completely immobile for a moderate time and can happen at any moment. However taking any forms of damage will make him to behave normal again."
+    },
+    {
+      "heading": "Dialogue",
+      "level": 2,
+      "text": "Encounter | Wolf: Lord Kuro!\nGenichiro: Shinobi of the Divine Heir. We meet again. Behold! The second Mortal Blade.\nKuro: Genichiro... If you think you can change Ashina's fate with such a thing... you are mistaken. Wolf... No one has the right to the Dragon's Heritage - it is no one's to bear. ...I wish there was another way.\nWolf: It's alright. ...One last time.\nGenichiro: Yes, let's finish this.\nEngaging in Combat | Genichiro: I will restore Ashina to glory!\nWhen his Posture is Half-Broken | Genichiro: I will not allow Ashina to be crushed...!\nAfter Deathblow | Genichiro: In the end I was powerless, but grandfather was not. Ashina will rise once more. The Dragon's blood running through her veins. With this, Ashina's long night comes to an end.\nAfter Defeating Wolf | Genichiro: I too have a duty I must uphold... Farewell.\nWitnessing First Resurrection | Genichiro: Yes, that's it... Your strength.\nWitnessing Second Ressurection | Genichiro: We are not so different, you and I...Wolf."
+    },
+    {
+      "heading": "Part 2",
+      "level": 2,
+      "text": "Isshin, the Sword Saint (剣聖 葦名一心, Sword Saint Ashina Isshin), having returned in his prime from \"the beyond\" through his Grandson's sacrifice with the \"Open Gate\" Mortal Blade, attempts to fulfill Genichiro's last wish by defeating Wolf and using the power of the Dragon's Heritage to defend the crumbling kingdom of Ashina from the Interior Ministry. He is considered one of the hardest bosses in the game."
+    },
+    {
+      "heading": "Dialogue",
+      "level": 2,
+      "text": "Emerging from Genichiro | Isshin: Pitiful grandchild... This was your last wish. To see Ashina returned from the great beyond... which means, Sekiro... I must destroy you.\nEngaging in Combat | Isshin: Come... Sekiro.\nAfter Defeating Wolf | Isshin: Hesitation is defeat. I told you that.\nEntering Phase 2 | Isshin: How my blood boils! Face me, Sekiro!\nDuring Deathblow | Isshin: Do it! ... well done, Sekiro.\nWolf: ......... Farewell."
+    }
+  ]
+}

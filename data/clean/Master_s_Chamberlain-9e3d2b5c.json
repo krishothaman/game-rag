@@ -1,0 +1,39 @@
+{
+  "title": "Master's Chamberlain",
+  "url": "https://sekiro-shadows-die-twice.fandom.com/wiki/Master's_Chamberlain",
+  "categories": [
+    "Characters"
+  ],
+  "sections": [
+    {
+      "heading": "Description",
+      "level": 2,
+      "text": "The Attendant of the Great Carp is the towering Palace Noble with the duty of feeding the Great Coloured Carp.\nEntranced by the creature, his only reason of life is now to serve this master, much to the displeasure of his daughters.\nHe rewards anyone who's also willing to appease the fish."
+    },
+    {
+      "heading": "Location",
+      "level": 2,
+      "text": "- Feeding Grounds: to the left of the Sculptor's Idol."
+    },
+    {
+      "heading": "Fountainhead Palace ( Feeding Grounds )",
+      "level": 3,
+      "text": "Upon first encountering him, the Attendant will tell Wolf to ring the bell to feed the Great Coloured Carp: after offering a Precious Bait twice, talk to him to first receive 1 1 and then 3 3.\nLastly, serve either the Truly Precious Bait of Pot Noble Harunaga or Pot Noble Koremori.\n- The chosen Noble will inherit the entire stock of the other, who'll disappear from the game for the rest of the playthrough."
+    },
+    {
+      "heading": "Sunken Valley ( Guardian Ape's Watering Hole )",
+      "level": 3,
+      "text": "Retrieve the Great White Whisker from the corpse of the fish."
+    },
+    {
+      "heading": "Fountainhead Palace ( Feeding Grounds )",
+      "level": 3,
+      "text": "Give the Great White Whisker to the Attendant to receive Divine Grass [x1].\nUpon reloading the area, the Attendant will be found dead next to the bell, with his daughter by his side.\n- If not obtained prior, the 4 4 will be on his body."
+    },
+    {
+      "heading": "Dialogue",
+      "level": 2,
+      "text": "First encounter | Attendant: This... the... noble... fish... Master... I call it... Feed... it... The bell... must be... rung...\nSpeaking again | Attendant: Master... Feed... it... The bell... must be... rung...\nAfter feeding the Great Coloured Carp | Attendant: Master... He will... be joyous... Happy... happy... He will be... rewarded... (Gives 1 1)\nAfter feeding the Great Coloured Carp again | Attendant: Master... Must not... grow fat... In moderation... in moderation... (Gives 3 3)\nAfter the Great Coloured Carp is killed | Attendant: Master, Master, Master... Master, where are you... Ohhhhh!\nGiven Great White Whisker | Attendant: Ahh... ahh... ahh... Master... Has passed... ohh... Oohhhhh... At last... at last... My duties... are complete... I am... grateful... (Gives Divine Grass [x1])\nAttacked | Attendant:\nOhhh... Nnghh... Stop!\nPlease... stop...\nTurned hostile | Attendant: Nnghh... Inexcusable...!\nKilling Wolf | Attendant: Master... Master... Apologies... for the disturbance...\nWhen Killed | Attendant: Unnggghhhh... My duties... forgive me..."
+    }
+  ]
+}

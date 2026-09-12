@@ -1,0 +1,20 @@
+{
+  "title": "Dragon's Heritage",
+  "url": "https://sekiro-shadows-die-twice.fandom.com/wiki/Dragon's_Heritage",
+  "categories": [
+    "Pages using DynamicPageList3 parser tag",
+    "Lore"
+  ],
+  "sections": [
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Dragon's Heritage is a power possessed by the Divine Heir.\nWhen one with the power of the Dragon's Heritage dies, the more a sickness known as Dragonrot spreads through the world."
+    },
+    {
+      "heading": "Gameplay Function",
+      "level": 2,
+      "text": "Dragon's Heritage allows Wolf to come back to life upon death, costing him a node of Ressurective Power. After resting, the player is automatically granted one node, with additional nodes requiring the player to defeat several enemies. Certain items will grant the player a free node, and others will increase the max number of nodes the player has available. After resurrecting, the node counter will be struck through with a black slash, making resurrection impossible until either defeating several enemies, or landing a death blow on a Boss or Mini-Boss."
+    }
+  ]
+}

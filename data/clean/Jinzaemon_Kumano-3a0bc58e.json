@@ -1,0 +1,54 @@
+{
+  "title": "Jinzaemon Kumano",
+  "url": "https://sekiro-shadows-die-twice.fandom.com/wiki/Jinzaemon_Kumano",
+  "categories": [
+    "Characters"
+  ],
+  "sections": [
+    {
+      "heading": "Description",
+      "level": 2,
+      "text": "Jinzaemon Kumano (熊野陣左衛門, Kumano Jinzaemon) is a samurai with the duty of patrolling the moat of Ashina Castle.\nHe ventures into Ashina Depths in search of the shamisen player, whose melody bewitched him.\nIf lured into Doujun's hands, he'll become a test patient for the Waters of Rejuvenation and end up a red-eyed madman.\nHe'll attempt to kill Wolf, should he murder the shamisen player first."
+    },
+    {
+      "heading": "Location",
+      "level": 2,
+      "text": "If left arriving at Mibu Village:\n- Ashina Reservoir: first met atop the well where Wolf woke up from in the prologue.\n- Bottomless Hole: a few steps ahead of the Sculptor's Idol.\n- Hidden Forest: just before the Sculptor's Idol.\n- Water Mill: next to the Sculptor's Idol.\nIf lured to the Abandoned Dungeon:\n- Abandoned Dungeon Entrance: inside the cell behind Doujun.\n- Underground Waterway: on the first island past the Sculptor's Idol.\nIf O'Rin of the Water is killed before talking to him:\n- Ashina Reservoir: first met atop the well where Wolf woke up from in the prologue."
+    },
+    {
+      "heading": "Ashina Castle ( Ashina Reservoir )",
+      "level": 3,
+      "text": "From the Ashina Reservoir Sculptor's Idol, take the left and grapple onto the two branches to get atop the wall. Go past the Watcher and grapple onto the next branch to meet Jinzaemon. Greet him to start his quest. Talking to him again, he'll reveal that he wants to follow the sound of a shamisen coming from Ashina Depths: if you have received the Surgeon's Bloody Letter from Doujun, you'll be able to send Jinzaemon to him by choosing to \"Lure to the Abandoned Dungeon\".\n- Killing O'Rin of the Water before interacting with Jinzaemon once will turn him hostile (see Progression #3)\n- Regardless of the progression, his quest has to be started before the final invasion of Ashina Castle and Outskirts by the Central Forces, since it will cause Ashina Reservoir to become unreachable for the rest of the playthrough."
+    },
+    {
+      "heading": "Ashina Depths ( Bottomless Hole )",
+      "level": 3,
+      "text": "(Optional) Walk past the Bottomless Hole Sculptor's Idol to meet Jinzaemon for the second time. Talking to him here will once again give the option to send him to Doujun, if the requirement is met."
+    },
+    {
+      "heading": "Ashina Depths ( Hidden Forest )",
+      "level": 3,
+      "text": "(Optional) Grapple past the Guardian Ape's Burrow to find Jinzaemon sitting on a rock by the entrance to the Hidden Forest. Talking to him, he'll tell Wolf that he finally caught a glimpse of the woman playing the shamisen and that his father warned him to never enter the mist shrouded village beneath Ashina. This is the last chance to lure him to the Abandoned Dungeon."
+    },
+    {
+      "heading": "Ashina Depths ( Water Mill )",
+      "level": 3,
+      "text": "Once his quest is started, unless sent to Doujun, he'll always end up near the Water Mill Sculptor's Idol, even if Sekiro has not interacted with him in his previous two locations. Once O'Rin of the Water is defeated, he'll thank Wolf for having brought her muse to him and will gift the shinobi a Jinza Jizo's Statue, before passing away."
+    },
+    {
+      "heading": "Ashina Castle ( Abandoned Dungeon Entrance )",
+      "level": 3,
+      "text": "If sent to Doujun, the surgeon will gift Lump of Fat Wax [x3] to Wolf. (Optional) Jinzaemon will be found in the cell behind him, accessible only after acquiring the Mibu Breathing Technique from the Corrupted Monk by diving past the Underground Waterway Sculptor's Idol and taking the left until a spot to grapple onto appears: jumping over the rockwall will lead Sekiro down to a catatonic Jinzaemon, who can only groan and grunt.\nUpon returning to Doujun, he'll now ask Wolf for the Red Eyes of a Carp found at the bottom of the lake of Mibu Village.\nGiven the Red Carp Eyes, Doujun will hand out Lump of Grave Wax [x2] in return.\nDoujun will now be found crying in Jinzaemon's cell, while the samurai, now driven mad by his Red Eyes, has been moved to the first island past the Underground Waterway Sculptor's Idol. Killing him here will reward Wolf with an unique Red Lump."
+    },
+    {
+      "heading": "Ashina Castle ( Ashina Reservoir )",
+      "level": 3,
+      "text": "If Wolf has killed O'Rin of the Water without ever talking to Jinzaemon in Ashina Reservoir, upon meeting him he'll draw his sword on Sekiro to take revenge. If killed here, he won't drop anything."
+    },
+    {
+      "heading": "Notes",
+      "level": 2,
+      "text": "- Can't contact Dragonrot when he's at the Water Mill or in the Abandoned Dungeon.\n- Can't be harmed while he's infected with Dragonrot or in the cell of the Abandoned Dungeon.\n- If O'Rin of the Water is killed while he's afflicted by Dragonrot, he'll be cured and found hostile in his original spot."
+    }
+  ]
+}

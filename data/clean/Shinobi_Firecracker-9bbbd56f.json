@@ -1,0 +1,39 @@
+{
+  "title": "Shinobi Firecracker",
+  "url": "https://sekiro-shadows-die-twice.fandom.com/wiki/Shinobi_Firecracker",
+  "categories": [
+    "Prosthetic Tools"
+  ],
+  "sections": [
+    {
+      "heading": "Introduction",
+      "level": 1,
+      "text": "A Prosthetic Tool fitted with Robert's firecrackers. Costs Spirit Emblems.\nUnleashes an explosive flash that briefly blinds foes and inflicts Posture damage on beast-type enemies. Has a wide, frontward field of effect that can impact multiple enemies at once.\nSuitable for temporarily immobilizing enemies and particularly good for scaring beasts."
+    },
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Unlocked by giving Robert's Firecrackers to the Sculptor. It is sold by the Battlefield Memorial Mob for 500 500."
+    },
+    {
+      "heading": "Ability",
+      "level": 2,
+      "text": "Shinobi Firecracker: Scatter a flash of gunpowder in front of you. Easily frightens beasts. Costs 2 2 Spirit Emblems to use."
+    },
+    {
+      "heading": "Spring-load Firecracker",
+      "level": 2,
+      "text": "A Firecracker upgraded with a spring mechanism. Costs Spirit Emblems to use.\nUnleashes a loud explosion and bright flash which causes foes to recoil and inflicts Posture damage on beast-type enemies.\nCharging up the spring mechanism adds rotational energy when spreading the Firecrackers, affecting enemies in all directions.\nPrerequisites | Spinning Shuriken\nUpgrade Cost | 200 200\nScrap Iron x2\nBlack Gunpowder x1\nSpirit Emblem Cost | 2 2 Spirit Emblems\nShinobi Firecracker\nScatter a flash of gunpowder in front of you. Easily frightens beasts.\n(Hold) Spring-load Firecracker\nCharge up the spring mechanism to scatter a flash of gunpowder in all directions while spinning."
+    },
+    {
+      "heading": "Long Spark",
+      "level": 2,
+      "text": "An upgraded Firecracker using compound gunpowder. Costs Spirit Emblems to use.\nCompounded gunpowder is said to have a long spark, and by increasing the proportion of Black Gunpowder the effect can be prolonged for longer than the average Firecracker.\nThe flames of the firecrackers bloom for a short while.\nPrerequisites | Spinning Shuriken\nSpring-load Firecracker\nUpgrade Cost | 500 500\nYellow Gunpowder x2\nBlack Gunpowder x3\nSpirit Emblem Cost | 2 2 Spirit Emblems\nLong Spark\nScatter a long-lasting flash of gunpowder in front of you. Easily frightens beasts.\n(Hold) Spring-load Long Spark\nCharge up the spring mechanism to scatter a long-lasting flash of gunpowder in all directions."
+    },
+    {
+      "heading": "Purple Fume Spark",
+      "level": 2,
+      "text": "An upgraded Firecracker that uses a purple, smoke-emitting compound gunpowder. Costs Spirit Emblems to use.\nThe tweaked compound gunpowder is known as \" Purple Fume Spark\".\nThe addition of fatty wax lumps delays the explosion slightly.\nEnemies blinded by the blast take slightly more Vitality and Posture damage for a brief period of time.\nPrerequisites | Spinning Shuriken\nSpring-load Firecracker\nLong Spark\nSparking Axe\nUpgrade Cost | 1500 1500\nLump of Fat Wax x5\nAdamantite Scrap x2\nFulminated Mercury x2\nSpirit Emblem Cost | 2 2 Spirit Emblems\nPurple Fume Spark\nScatter a purple smoke emitting flash of gunpowder in front of you. Takes longer to explode than other firecrackers. Enemies blinded by the blast take slightly more Vitality and Posture damage for a brief period of time.\n(Hold) Spring-load Purple Fume Spark\nCharge the spring mechanism to scatter a flash of gunpowder in all directions while spinning."
+    }
+  ]
+}

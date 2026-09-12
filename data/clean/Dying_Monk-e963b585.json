@@ -1,0 +1,29 @@
+{
+  "title": "Dying Monk",
+  "url": "https://sekiro-shadows-die-twice.fandom.com/wiki/Dying_Monk",
+  "categories": [
+    "Characters"
+  ],
+  "sections": [
+    {
+      "heading": "Description",
+      "level": 2,
+      "text": "Dying Monk\nHidden Forest\nHe'll ask Wolf to kill the man who profaned his temple, giving him direction on how to access the building from the hole on the second floor."
+    },
+    {
+      "heading": "Location",
+      "level": 2,
+      "text": "- Hidden Forest: leaning on the Buddha statue just by the bonfire."
+    },
+    {
+      "heading": "Dialogue",
+      "level": 2,
+      "text": "First encounter | Monk: Hey... hey you... (cough, cough) If you know the path of Buddha... Would you slay one who opposes it?\nWolf: One who opposes the Buddha?\nMonk: Correct... (cough, cough) The one of whom I speak hides in an abandoned temple up ahead... He's sealed away the village in a shadowy fog... so that he can fool the villagers.\nWolf: An abandoned temple...?\nMonk: Yes, it's an old building... (cough, cough) The door may be closed, but there should be a hole in the second floor.\nSpeaking again | Monk: ... Come, will you slay he who opposes Buddha? (cough, cough) The abandoned temple he hides in is an old building... The door may be closed, but there should be a hole in the second floor.\nAfter defeating the Mist Noble | Monk: I've gotten terribly old, but... This old man would like to see Lord Buddha return to his temple once more..."
+    },
+    {
+      "heading": "Notes",
+      "level": 2,
+      "text": "- Can't be infected with Dragonrot."
+    }
+  ]
+}

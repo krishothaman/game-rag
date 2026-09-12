@@ -1,0 +1,24 @@
+{
+  "title": "Dragon's Tally Board",
+  "url": "https://sekiro-shadows-die-twice.fandom.com/wiki/Dragon's_Tally_Board",
+  "categories": [
+    "Key Items"
+  ],
+  "sections": [
+    {
+      "heading": "In-Game Description",
+      "level": 2,
+      "text": "A tally board carved from a large piece of jade. Possessing this increases the stocks that can be purchased in merchants' shops.\nSuch a tally board is highly prized by the merchant class. Old custom dictates that those of dragon rank are recognized as supreme merchants by the imperial palace, and should be given the best possible treatment."
+    },
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Increases stocks and adds the following items to all merchants (except Pot Nobles):"
+    },
+    {
+      "heading": "Notes",
+      "level": 2,
+      "text": "- Carries over New Game Plus."
+    }
+  ]
+}

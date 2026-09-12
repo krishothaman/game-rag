@@ -1,0 +1,34 @@
+{
+  "title": "Mist Raven",
+  "url": "https://sekiro-shadows-die-twice.fandom.com/wiki/Mist_Raven",
+  "categories": [
+    "Prosthetic Tools"
+  ],
+  "sections": [
+    {
+      "heading": "Introduction",
+      "level": 1,
+      "text": "A Prosthetic Tool loaded with the feather of a Mist Raven. Costs Spirit Emblems to use.\nWhen attacked in the assumed stance, disappear like the mist and move away.\nOnce you think you've caught one, all that will remain is feathers. That is the mark of a true Mist Raven."
+    },
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Unlocked by giving the Mist Raven's Feathers to the Sculptor. It is found in a hidden pagoda in Hirata Estate near the Bamboo Thicket Slope."
+    },
+    {
+      "heading": "Ability",
+      "level": 2,
+      "text": "Mist Stance: When attacked in this stance, instantly move either in the direction chosen or straight up should no direction be provided. Costs 2 2 Spirit Emblems to use. The Spirit Emblems will not be consumed upon activated, but rather upon triggered."
+    },
+    {
+      "heading": "Aged Feather Mist Raven",
+      "level": 2,
+      "text": "Mist Raven feathers with notches in the tips. Costs Spirit Emblems to use.\nDisappear like the mist and move away. Can be performed not only from the assumed stance, but also after taking damage.\nThe slight notches in the tips of the feathers give the appearance of an old Mist Raven. They are there to allow one to dissolve into the mist even more easily.\nPrerequisites | Spinning Shuriken\nSpring-load Axe\nUpgrade Cost | 500 500\nScrap Magnetite x2\nLump of Fat Wax x1\nBlack Gunpowder x2\nSpirit Emblem Cost | 2 2 Spirit Emblems\nMist Stance\nWhen attacked in this stance, instantly move in the direction chosen.\n(Use after being attacked) Mist Raven\nInstantly move in the direction chosen."
+    },
+    {
+      "heading": "Great Feather Mist Raven",
+      "level": 2,
+      "text": "Mist Raven fused with crimson feathers. Costs Spirit Emblems to use.\nDisappear and displace, like the mist. Can be performed from both the assumed stance and after taking damage. Dyed red to resemble the Great Mist Raven.\nThe feathers vanish in a scorching wake. The great raven is a god of the land, and the touch of gods is to be feared.\nPrerequisites | Spinning Shuriken\nSpring-load Axe\nAged Feather Mist Raven\nPhantom Kunai\nUpgrade Cost | 1500 1500\nLump of Fat Wax x4\nYellow Gunpowder x4\nLump of Grave Wax x3\nFulminated Mercury x3\nSpirit Emblem Cost | 3 3 Spirit Emblems\nRed Mist Stance\nWhen attacked in this stance, instantly move in the direction chosen. The feathers left behind alight and burn enemies along your path.\n(Use after taking damage) Red Mist Raven\nInstantly move in the direction chosen. The feathers left behind alight and burn enemies along your path."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "title": "Offering Box",
+  "url": "https://sekiro-shadows-die-twice.fandom.com/wiki/Offering_Box",
+  "categories": [
+    "Locations"
+  ],
+  "sections": [
+    {
+      "heading": "In-Game Description",
+      "level": 2,
+      "text": "Items that become unavailable elsewhere end up in the Offering Box.\nWhen the box is illuminated, it means an item has found it's way inside.\nItems can be obtained by inspecting the box and offering money."
+    },
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "The Offering Box is a shrine where unique items dropped by Mini-Bosses or sold by Merchants are found, in case their original holders have disappeared from the game.\nIf the box is shining, there's something to buy inside.\nTo acquire these items, Wolf needs to spend a conspicuous amount of Sen."
+    },
+    {
+      "heading": "Hanbei's Dialogue",
+      "level": 2,
+      "text": "Talking | Hanbei: Have you noticed... This temple attracts those with nowhere else to go. I certainly fit that description. And I suppose that's why... Interesting things make their way into the offering box from time to time."
+    },
+    {
+      "heading": "Location",
+      "level": 2,
+      "text": "- Dilapidated Temple: at the end of the path to the right of the Sculptor's Idol, next to Hanbei."
+    },
+    {
+      "heading": "Notes",
+      "level": 2,
+      "text": "- No unique item from Hirata Estate will become available at the Offering Box, even if the Timid Maid is dead.\n- The cost of items sold at the Offering Box is unaffected by the Promissory Note.\n- The content of the Offering Box will reset upon entering New Game Plus.\n- The items sold at the Offering Box are necessary to obtain certain Trophies:\nPrayer Beads: \"Peak Physical Strength\".\nProsthetic Tools: \"All Prosthetic Tools\".\nUpgrade Materials: \"Master of the Prosthetic\".\nGourd Seed: \"Ultimate Healing Gourd\"\nAnti-air Deathblow Text: \"Height of Technique\"."
+    }
+  ]
+}

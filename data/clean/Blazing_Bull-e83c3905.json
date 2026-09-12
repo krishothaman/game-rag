@@ -1,0 +1,25 @@
+{
+  "title": "Blazing Bull",
+  "url": "https://sekiro-shadows-die-twice.fandom.com/wiki/Blazing_Bull",
+  "categories": [
+    "Mini-Bosses",
+    "Enemies"
+  ],
+  "sections": [
+    {
+      "heading": "Introduction",
+      "level": 1,
+      "text": "The Blazing Bull (火牛) is a Mini-Boss in Sekiro: Shadows Die Twice. It is located at the doors of Ashina Castle."
+    },
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Eavesdropping on the nearby soldiers reveals they tied the flaming straw to the bull out of desperation and that the animal will attack anyone on his path indiscriminately.\nAs the Third Prayer Necklace states, the bull was merely an enraged beast planned by Genichiro to be used as the last line of defense for Ashina Castle."
+    },
+    {
+      "heading": "Notes",
+      "level": 2,
+      "text": "- Once the Bull is killed, the Ashina Castle Sculptor's Idol will become commuted automatically.\n- The Vitality and Posture of this miniboss were reduced with patch 1.03 and then re-adjusted with patch 1.04.\n- It's still possible to exploit an out-of-bound jump to skip this miniboss on the current patch."
+    }
+  ]
+}

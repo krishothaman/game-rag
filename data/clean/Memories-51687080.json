@@ -1,0 +1,30 @@
+{
+  "title": "Memories",
+  "url": "https://sekiro-shadows-die-twice.fandom.com/wiki/Memories",
+  "categories": [
+    "Key Items",
+    "Items"
+  ],
+  "sections": [
+    {
+      "heading": "In-Game Description",
+      "level": 2,
+      "text": "The battle memory of an extraordinary foe, lingering in the mind of the Wolf.\nCommune with a Sculptor's Idol and confront memories of battle to permanently increase Attack Power."
+    },
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "After obtaining a Memory, interact with a Sculptor's Idol and select \"Enhance Attack Power\", then choose one available: the Memory will be converted into a Remnant and Wolf's Attack Power will rise by 1.\nA boss whose Memory has been acquired will also become available for further battles in the Reflection of Strength."
+    },
+    {
+      "heading": "Location",
+      "level": 2,
+      "text": "Obtained by killing Bosses.\nMemory: Gyoubu Oniwa\nGyoubu Masataka Oniwa was the keeper of the Ashina Castle Gate.\nMemory: Lady Butterfly\nThe Phantom Lady Butterfly was a seasoned practitioner of illusions.\nMemory: Genichiro\nAs the Code dictates, the Wolf swore vengeance on Genichiro Ashina.\nMemory: Screen Monkeys\nThe Folding Screen Monkeys guarded the Hall of Illusions and befriended the Divine Child of Rejuvenation.\nMemory: Guardian Ape\nThe Guardian Ape was defeated, though its roar can still be heard. It is said that an infested body marks the undying...\nMemory: Headless Ape\nThe Headless Guardian Ape was a colossal beast, plagued with the power of the undying.\nMemory: Corrupted Monk\nThe Corrupted Monk watched over the cave entrance, deep in Mibu Village.\nMemory: True Monk\nThe Corrupted Monk guarded the bridge leading to the fountainhead palace.\nMemory: Great Shinobi\nThe Great Shinobi Owl was foster father to the Wolf.\nMemory: Divine Dragon\nThe Divine Dragon, ancient deity of the Everblossom.\nMemory: Foster Father\nThe foster father confronted in old memories was a man in his prime.\nMemory: Hatred Demon\nThe one-armed demon prowled the battlefield, consumed by flames of deepest resentment.\nMemory: Isshin Ashina\nIsshin Ashina was a true master of the sword; no less so in his vale of years.\nMemory: Saint Isshin\nAt his peak, Isshin Ashina devoted himself to deadly conflict in pursuit of strength. A single-minded killing machine of a man.\nMemory: Inner Genichiro\nDeep within the mind, Genichiro stirred, his tenacity undying even in memory. Ashina demands one become stronger still.\nMemory: Inner Father\nDeep within the mind, the father stirred. The man Wolf confronted in memory was more than Owl could ever have hoped to be.\nMemory: Inner Isshin\nDeep within the mind, Isshin stirred. Even in memory, his cloudless thoughts spurred a relentless pursuit of strength."
+    },
+    {
+      "heading": "Notes",
+      "level": 2,
+      "text": "- The maximum Attack Power attainable is 99, yet it's possible to convert further Memories into Remnants even after this treshold, although it will have no effect on Wolf.\n- The only way to increase Attack Power without consuming Memories is to complete the Dancing Dragon Mask and use it at a Sculptor's Idol to exchange 5 Skill Points for 1 addition point in Attack Power."
+    }
+  ]
+}

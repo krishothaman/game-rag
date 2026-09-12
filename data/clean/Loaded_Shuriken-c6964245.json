@@ -1,0 +1,49 @@
+{
+  "title": "Loaded Shuriken",
+  "url": "https://sekiro-shadows-die-twice.fandom.com/wiki/Loaded_Shuriken",
+  "categories": [
+    "Prosthetic Tools"
+  ],
+  "sections": [
+    {
+      "heading": "Introduction",
+      "level": 1,
+      "text": "A Shuriken Wheel Prosthetic Tool, fitted to the Shinobi Prosthetic. Costs Spirit Emblems to use.\nPull a shuriken loaded into the wheel and launch it at the target in a single, flowing motion. The swiftly thrown shuriken damage enemy Vitality and Posture, particularly against those with a tendency to take to the air."
+    },
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Unlocked by giving the Shuriken Wheel to the Sculptor. It is found in Ashina Outskirts after the Outskirts Wall - Gate Path Sculptor's Idol, on the upper floor of a gatehouse behind a broken wall.\nIn its most basic form, the Loaded Shuriken serves as a straightforward ranged projectile attack for Wolf that can be thrown rapidly, though their most effective use are often the few well-timed shots. The use of Shuriken is instantaneous and among the fastest of Prosthetic Tools. Loaded Shuriken by itself is not a reliable weapon to eliminate Vitality or Posture and mostly serves as a side weapon that thrives on the situation it is used rather than the frequency, among these uses are:\n- Interrupting enemies that are recovering their Posture\n- As a weapon to take out fragile but otherwise dangerous enemies that are too nimble for Kusabimaru (eg. Shinobi Dogs)\n- As a mean to interrupt mid-air enemies; the fact that there's a universal law in the game where Projectile attacks do considerably more damage vs entities who are mid-air adds to the reward of undeflected Shuriken\nSpinning Shuriken is an upgrade that adds an alternative projectile mode that can be fired by holding the Prosthetic button. These spinning shurikens would violently grind the enemy before releasing a final burst that deals roughly the same damage as a normal throw, cumulating in a considerably higher vitality and posture damage than a regular throw. Having a wind-up, these throws are harder to time against mid-air opponents but does wonders against weaker enemies considering it cost the same amount of Spirit Emblem as a normal throw.\nGouging Top adds upon the feature of the Spinning Shuriken where the alternative throw inflicts damage through Guard, making it a straightforward and somewhat useful upgrade that gives the Shuriken some use as a means to help wear down the vitality and posture of even the most reactive enemies.\nLazulite Shuriken is a powerful upgrade that considerably increases the damage of thrown shurikens and makes them able to go through enemies, hitting those behind them; for the spinning throw, the shuriken will pierce through enemy at the conclusive burst. Although the piercing effect is very unlikely useful in many situation, the damage increase of Lazulite Shuriken at the same Spirit Emblem cost easily makes the other non-deviating upgrade of the Loaded Shuriken obsolete against this upgrade.\nPhantom Kunai is a deviating upgrade that changes the way the tools is used (and also the type of projectile fired), instead of a shuriken, Wolf would throw a Kunai that after hitting a target would have illusory orbs home at the target. Holding the Prosthetic button would increase the number of orbs. There is a certain distance that the orbs need before being able to properly track targets, thus a target being too close to Wolf would have the orbs fail to home.\nSen Throw is a peculiar deviating upgrade that changes the projectile into literal Sen that Wolf carries, costing him both Spirit Emblems and the game currency to use. The Sen are thrown in a horizontally spreading trajectory: the further Sen travels, the more spread apart they are from each other, meaning the throw would inflict more damage the closer the target is. The amount of Sen Wolf is carrying would determine the amount of Sen he would shoot with with both the normal and held Prosthetic button."
+    },
+    {
+      "heading": "Ability",
+      "level": 2,
+      "text": "Shuriken Throw: Attack by throwing a shuriken. Costs 1 1 Spirit Emblem to use."
+    },
+    {
+      "heading": "Spinning Shuriken",
+      "level": 2,
+      "text": "An enhanced Shuriken that can be empowered with rotational energy. Costs Spirit Emblems to use.\nDamage an enemy's Vitality and Posture, and does huge damage to jumping enemies. Taking a moment to further bend the spring and build rotational energy will cause the blade to rotate after landing, damaging the enemy multiple times on hit.\nSimilar to a spinning top, but with blades.\nPrerequisites | None\nUpgrade Cost | 200 200\nScrap Iron x3\nSpirit Emblem Cost | 1 1 Spirit Emblem\nShuriken Throw\nAttack by throwing a shuriken.\n(Hold) Spinning Shuriken Throw\nCharge the rotational power of the shuriken before throwing. Hits the enemy multiple times."
+    },
+    {
+      "heading": "Gouging Top",
+      "level": 2,
+      "text": "An enhanced shuriken that pierces enemies with its sharp blades. Costs Spirit Emblems to use.\nThese piercing blades retain momentum after landing, and will damage an enemy's Vitality and Posture, even if guarded. Taking a moment to further bend the spring, and build rotational energy will cause the blade to rotate after landing, damaging the enemy multiple times on hit.\nPrerequisites | Spinning Shuriken\nLoaded Spear Thrust Type\nUpgrade Cost | 600 600\nScrap Magnetite x3\nSpirit Emblem Cost | 1 1 Spirit Emblem\nShuriken Throw\nAttack by throwing a shuriken. It has a penetrating effect that damages Vitality and Posture even when guarded.\n(Hold) Spinning Shuriken Throw\nCharge the rotational power of the shuriken before throwing. Hits the enemy multiple times."
+    },
+    {
+      "heading": "Sen Throw",
+      "level": 2,
+      "text": "A Prosthetic Tool that shoots loaded coin bundles. Costs sen and Spirit Emblems to use.\nWhile it lacks a shuriken's range, it inflicts far more damage, as the coins hit multiple times. The amount of coins thrown increases depending on how much money one possesses. Being rich makes the blast incredibly strong, but an empty purse will shoot nothing but dust.\nPrerequisites | Spinning Shuriken\nLoaded Spear Thrust Type\nGouging Top\nUpgrade Cost | 2000 2000\nScrap Iron x4\nAdamantite Scrap x4\nScrap Magnetite x4\nSpirit Emblem Cost | 2 2 Spirit Emblems\nSen Throw\nThrow coins.\n(Hold) Raining Money\nScatters a large amount of sen\nThe amount of sen thrown varies depending on how much is in your possession.\n\"The dirt poor throw dust,\nThe poor throws a little money,\nThe rich throw a lot of money,\nand the filthy rich throw enough money\nto make all the rest cry.\""
+    },
+    {
+      "heading": "Phantom Kunai",
+      "level": 2,
+      "text": "Lady Butterfly's kunai, fitted into the shuriken wheel. Costs Spirit Emblems to use.\nCreates a special sound when thrown, which causes phantom butterflies to follow the path of the kunai. The phantom butterflies chase after enemies and inflict damage even when guarded.\nPrerequisites | Spinning Shuriken\nSpring-load Axe\nAged Feather Mist Raven\nUpgrade Cost | 1000 1000\nPhantom Kunai (Upgrade Material)\nLump of Fat Wax x3\nScrap Iron x6\nScrap Magnetite x3\nSpirit Emblem Cost | 2 2 Spirit Emblems\nPhantom Butterflies\nPhantom butterflies fly out after throwing kunai. The phantom butterflies chase after enemies and can also inflict damage to guarding enemies.\n(Hold) Swarming Dance\nCharge to release more butterflies."
+    },
+    {
+      "heading": "Lazulite Shuriken",
+      "level": 2,
+      "text": "Shuriken blessed with the favor of the Fountainhead Lapis Lazuli. Costs Spirit Emblems to use.\nIts piercing edge heavily damages Vitality, and damages Vitality and Posture even if guarded. These blades do not slow down, even after striking an enemy.\nThe lazulite blue trail of light it emits in fight is reminiscent of a shooting star.\nPrerequisites | Spinning Shuriken\nLoaded Spear Thrust Type\nGouging Top\nSen Throw\nSpring-load Axe\nAged Feather Mist Raven\nPhantom Kunai\nGreat Feather Mist Raven\nUpgrade Cost | 3000 3000\nLapis Lazuli x2\nAdamantite Scrap x5\nLump of Grave Wax x3\nScrap Magnetite x6\nLump of Fat Wax x6\nSpirit Emblem Cost | 1 1 Spirit Emblem\nLazulite Shuriken\nThrow extremely sharp Lazulite Shuriken. Its piercing edge heavily damages Vitality and Posture even if guarded.\n(Hold) Lazulite Spinning Shuriken\nBring the Shuriken to a powerful spin before throwing. Hits enemy multiple times."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "title": "Loaded Spear",
+  "url": "https://sekiro-shadows-die-twice.fandom.com/wiki/Loaded_Spear",
+  "categories": [
+    "Prosthetic Tools"
+  ],
+  "sections": [
+    {
+      "heading": "Introduction",
+      "level": 1,
+      "text": "A Prosthetic Tool loaded with Gyoubu's Broken Horn. Costs Spirit Emblems to use.\nUnleash far-reaching thrust attacks. Lighter enemies struck by the spear may be dragged towards the wielder.\nThose of large build will at times force themselves into poorly-fitting armor. Such armor could be torn clean off: coined by Gyoubu as Armor Stripping."
+    },
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Unlocked by giving Gyoubu's Broken Horn to the Sculptor. It is found in a chest in the Ashina Reservoir, requires Gatehouse Key to unlock.\nThe Loaded Spear in its basic form functions as a weapon for a mid-range thrust attack, this attack has a longer reach and is marginally faster than Kusabimaru's own thrust attack. Players can additionally press the Prosthetic button after contact to do a pulling maneuver at no additional cost; these pull has various effects depending on whom it is used on: Most enemies would only get dragged closer to Wolf, some that are sloppily armored will have their armor stripped off (and suffer major Posture damage) and the Headless Ape in particular has a special weakness to this move in which if players successfully deflected its overhead slam, the ape's body will tumble and players can use the Loaded Spear on the beheaded section to partially pull out the infesting centipede from the Ape's body, dealing massive posture damage. With the Chasing Slice Martial Arts ability, players can do a quick horizontal sweep with Kusabimaru after the thrust attack or the pull.\nThe Thrust Type upgrade adds a powerful thrust attack to the tool's moveset that can be done by holding the Prosthetic button down, this consumes no additional Spirit Emblem. This power thrust pushes Wolf even further forward and deals a total of 3 hits, with the final one being the strongest. The pull maneuver can still be done right after the final thrust. While it can potentially deal much more vitality and posture damage than a normal thrust at the same cost, the move leaves Wolf vulnerable longer and has a chance to be blocked/deflected from start to finish. The upgrade feature thus is best used when players know that the enemy would be defenseless against it or is poor at guarding against rapid succession of attacks.\nThe Spiral Spear is a straightforward upgrade from the Thrust Type, as it gives not only a boost in damage but the ability to inflict Vitality and Posture damage through enemy's guard; with the power thrust attack, only the final hit pierces through guard. This upgrade basically eliminates the weakness of Loaded Spear against extremely reactive enemies that can easily guard against the Prosthetic while giving it a considerable strength boost.\nThe Cleave Type upgrade deviates from the Thrust type in that it offers a different special move: its held Prosthetic button attack is a near 360 degree swipe. This attacks has a considerable wind-up but offers one of the widest sweep attack Wolf can do, but the lack of stagger resistance makes the use of this attack extremely situational. It might be best used against a group of foes that frequently distances away from Kusabimaru's reach, or group of foes that Wolf can make distance from to hit from a safer distance.\nThe Leaping Flame is technically an upgrade to the Cleave Type; it has a glaring downside of costing 2 Spirit Emblems per use as opposed to just 1, tough it does have an increased damage output and all of its attacks are capable of building the Burn status. With the help of Oil, the spear can be extremely useful against bosses who the players are already proficient to use the Loaded Spear against, especially ones that can recover their Posture quickly. The sweeping attack of this upgrade also has a unique place as a crowd control Mibu Village, as the villagers there would cower at the sight of fire and suffer badly from burn status."
+    },
+    {
+      "heading": "Ability",
+      "level": 2,
+      "text": "Thrust: A frontward thrust with the spear. Costs 1 1 Spirit Emblem to use.\n(Thrust Repeatedly) Drag: Pull an enemy struck by the spear back towards you. Can also tear poorly-fitting armour from heavier foes."
+    },
+    {
+      "heading": "Loaded Spear Thrust Type",
+      "level": 2,
+      "text": "A Loaded Spear reinforced with a spring mechanism. Costs Spirit Emblems to use.\nAllows for long range thrust attacks. Lighter enemies struck by the attacks may be dragged towards the wielder. Can also tear poorly-fitting armor from heavier foes.\nStore energy in the spring mechanism and use its momentum for successive and relentless thrust attacks.\nPrerequisites | Spinning Shuriken\nUpgrade Cost | 400 400\nScrap Iron x5\nSpirit Emblem Cost | 2 2 Spirit Emblems\nThrust\nA frontward thrust with the spear.\nDrag\nPull an enemy struck by the spear back towards you. Can also tear poorly-fitting armour from heavier foes.\n(Hold) Rush\nReady your spear and rush straight ahead."
+    },
+    {
+      "heading": "Loaded Spear Cleave Type",
+      "level": 2,
+      "text": "A Loaded Spear further reinforced with an enhanced spring mechanism. Costs Spirit Emblems to use.\nUnleash far-reaching thrust attacks. Lighter enemies struck by the spear may be dragged towards the wielder. Can also tear poorly-fitting armor from heavier foes.\nStore energy in the spring mechanism for a powerful cleaving attack.\nPrerequisites | Spinning Shuriken\nLoaded Spear Thrust Type\nUpgrade Cost | 600 600\nScrap Iron x4\nScrap Magnetite\nSpirit Emblem Cost | 2 2 Spirit Emblems\nThrust\nA frontward thrust with the spear.\nDrag\nPull an enemy struck by the spear back towards you. Can also tear poorly-fitting armour from heavier foes.\n(Hold) Cleave\nCharge up your strength, then cleave through surrounding enemies."
+    },
+    {
+      "heading": "Spiral Spear",
+      "level": 2,
+      "text": "A Loaded Spear with a spiral chiseled into the blade. Costs Spirit Emblems to use.\nSharp thrust attacks from this Prosthetic Tool damage an enemy's Vitality and Posture, even through their guard.\nThe spear's spiral creates a corkscrew shockwave that gouges and rends as it penetrates.\nPrerequisites | Spinning Shuriken\nLoaded Spear Thrust Type\nLoaded Spear Cleave Type\nUpgrade Cost | 1000 1000\nScrap Iron x10\nScrap Magnetite x4\nSpirit Emblem Cost | 1 1 Spirit Emblem\nCorkscrew Thrust\nRelease a spinning corkscrew thrust at an enemy before you. This will damage their Vitality and Posture, even if guarded.\nDrag\nPull an enemy struck by the spear back towards you. Can also tear poorly-fitting armour from heavier foes.\n(Hold) Corkscrew Rush\nReady your spear and unleash a keen, spinning corkscrew rush."
+    },
+    {
+      "heading": "Leaping Flame",
+      "level": 2,
+      "text": "A loaded Spear with an attached percussion hammer to create flame. Costs Spirit Emblems to use.\nBathe the tip of the Loaded Spear in flames making it a dangerously sharp spear and firearm.\nA charged strike of the spear will knock enemies down and consume them in a fiery blaze.\nPrerequisites | Spinning Shuriken\nLoaded Spear Thrust Type\nLoaded Spear Cleave Type\nSpiral Spear\nUpgrade Cost | 1500 1500\nAdamantite Scrap x2\nFulminated Mercury x1\nYellow Gunpowder x4\nBlack Gunpowder x8\nSpirit Emblem Cost | 2 2 Spirit Emblems\nBlazing Thrust\nA frontward thrust with the spread wreathed in flames. Applies Burn status abnormality to enemies.\nDrag\nPull an enemy struck by the spear back towards you. Can also tear poorly-fitting armour from heavier foes.\n(Hold) Leaping Flame\nCharge up your strength, then cleave through surrounding enemies and set them on fire."
+    }
+  ]
+}

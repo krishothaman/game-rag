@@ -1,0 +1,44 @@
+{
+  "title": "Pot Noble Koremori",
+  "url": "https://sekiro-shadows-die-twice.fandom.com/wiki/Pot_Noble_Koremori",
+  "categories": [
+    "Characters"
+  ],
+  "sections": [
+    {
+      "heading": "Description",
+      "level": 2,
+      "text": "Pot Noble Koremori (壺の貴人・維盛) is a merchant who trades items for Treasure Carp Scales.\nObsessed with becoming a carp, he'll try to kill the Great Coloured Carp by bestowing his Truly Precious Bait upon Wolf to have him offer it to the fish.\nIf Sekiro feeds Koremori's Bait to the Carp, the Pot Noble will turn into a Carp, while his rival Harunaga will disappear."
+    },
+    {
+      "heading": "Location",
+      "level": 2,
+      "text": "- Near Pot Noble: near the Sculptor's Idol, only reachable from a cave reached by a branch next to a waterfall, between the large gathering of Okami Warriors near the Great Sakura idol and the palace where the Palace Nobles are cannibalizing the Okami."
+    },
+    {
+      "heading": "Fountainhead Palace (Near Pot Noble)",
+      "level": 3,
+      "text": "Give Koremori at least 9 Treasure Carp Scales and talk to him to receive his Truly Precious Bait."
+    },
+    {
+      "heading": "Fountainhead Palace ( Feeding Grounds )",
+      "level": 3,
+      "text": "Feed Koremori's Bait to the Great Coloured Carp."
+    },
+    {
+      "heading": "Hirata Estate (Near Pot Noble)",
+      "level": 3,
+      "text": "Retrieve Lapis Lazuli [x1] from Koremori's pot. Koremori, turned into a carp, will be found in the pod just below the Sculptor's Idol and will have inherited the whole stock of the other Pot Noble, who'll disappear from the game for the rest of the playthrough."
+    },
+    {
+      "heading": "Quest Items",
+      "level": 2,
+      "text": "Truly Precious Bait\n(Given after spending 9 or more Treasure Carp Scale) | Lapis Lazuli x1\n(Found in his pot after his bait is fed to the Great Coloured Carp)\nCalling out to Wolf | Koremori: Hello... Hello... You there. Hello...\nFirst encounter | Koremori: Do you know about carp scales? The priceless scales of the Divine Treasure Carp. Bring them to me, and I'll reward you handsomely.\nLeaving (generic) | Koremori: Bring me some scales next time...\nGreeting (generic) | Koremori: Did you bring me any scales? If you have any, I'll reward you handsomely.\n\"Talk\" | Koremori: You there. If you ever happen across another pot like mine... Ignore any requests he makes of you. He's the shame of our clan. He's a treasonous villain who attempted to kill the Great Carp for his own benefit.\n\"Talk\" after spending 3 3 | Koremori: Most of my scales have returned. And I owe it all to you... Finally the time has come for him to pay the price for his crime. But scales are priceless... It's almost as if I'm priceless, too... Heheh.\n\"Talk\" after spending 9 9 | Koremori:Koremori: You there. You've done a remarkable job thus far. I feel that I can rely on you. Will you listen to my tale? Or rather, my secret?\nAnswering \"Not interested\" | Wolf: ...\nKoremori: Oh, do you doubt me? Surely it's just a misunderstanding. And misunderstandings can always be cleared up. Come on. You understand me, right? Right?\nAnswering \"Listen to his secret\" | Wolf: Sure.\nKoremori: Oh, wonderful. Truly remarkable. Now, the secret I mentioned... I'd like you to present this bait to the Great Carp. Don't let anyone see, if you can help it. Be as stealthy as possible. (Gives Truly Precious Bait) Do that, and I'll bestow upon you the palace's secret treasure.\nLeaving after receiving the Truly Precious Bait | Koremori: Hello again. Take care with that bait. Quietly... Very, very quietly... Hehe... hehehehehe...\nAttacking pot | Koremori:\nI-It's going to break!\nStop, you'll break the pot!\nAfter purchase | Koremori: A well-bred man, you are. Please bring more scales soon.\nIf Wolf has both Truly Precious Baits | Koremori: Even if things take a turn for the worse... be sure not to confuse my bait for his. He's nothing more than a vile traitor. Hehe.... Hehehehe.\nTalking | Koremori: Precious... Much more precious... Give me more scales...\nLeaving | Koremori: Ohh, Splendid, splendid..."
+    },
+    {
+      "heading": "Notes",
+      "level": 2,
+      "text": "- Can't be infected by Dragonrot.\n- Sells one of the three pieces of the Dancing Dragon Mask, the other two fragments being sold by Pot Noble Harunaga and the Dungeon Memorial Mob.\n- Only merchant to sell Lapis Lazuli.\n- If attacked, he'll stop talking to Wolf until the area is reloaded."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "title": "Kuro's Charm",
+  "url": "https://sekiro-shadows-die-twice.fandom.com/wiki/Kuro's_Charm",
+  "categories": [
+    "Key Items"
+  ],
+  "sections": [
+    {
+      "heading": "In-Game Description",
+      "level": 2,
+      "text": "Charm received from Kuro.\nPlaced on the Wolf's person in secret, after he lost his life in Hirata Estate and gained the power of Resurrection.\nThe charm has protected the Wolf well, tempering his ordeals. To part with it would mean facing a path of hardship beyond that endured thus far."
+    },
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Upon entering a New Game Plus journey for the first time, at the start of any new playthrough Kuro will now ask Wolf if he wants to separate from this charm.\nIf one chooses to abandon this item, Sens and Skill Experience gained from enemies will be increased by ~20%, but Wolf will now suffer chip damage when blocking attacks or failing to deflect with the correct timing and all the enemies will also have increased Vitality, Posture and damage.\nIt's possible to abandon this path of further hardships by talking with the Sculptor at any time or by interacting with his Workshop in the Dilapidated Temple, once he leaves, but it won't be possible to discard this item again in the same playthrough afterward."
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "pages": 230,
+  "sections": 870,
+  "total_words": 104501,
+  "average_words_per_page": 454,
+  "median_words_per_page": 160,
+  "largest_pages": [
+    {
+      "title": "Emma",
+      "words": 5984
+    },
+    {
+      "title": "Emma/Dialogue",
+      "words": 4658
+    },
+    {
+      "title": "Kuro, The Divine Heir",
+      "words": 4173
+    },
+    {
+      "title": "The Divine Heir/Dialogue",
+      "words": 3921
+    },
+    {
+      "title": "Divine Child of Rejuvenation",
+      "words": 3702
+    },
+    {
+      "title": "Sculptor",
+      "words": 3424
+    },
+    {
+      "title": "Divine Child of Rejuvenation/Dialogue",
+      "words": 2652
+    },
+    {
+      "title": "Faithful One",
+      "words": 2244
+    },
+    {
+      "title": "Doujun",
+      "words": 2127
+    },
+    {
+      "title": "Rot Essence",
+      "words": 2061
+    }
+  ],
+  "smallest_pages": [
+    {
+      "title": "Taro Troop",
+      "words": 2
+    },
+    {
+      "title": "Gachiin",
+      "words": 2
+    },
+    {
+      "title": "Gokan",
+      "words": 3
+    },
+    {
+      "title": "Ako",
+      "words": 4
+    },
+    {
+      "title": "Ashina",
+      "words": 6
+    },
+    {
+      "title": "Divine Realm",
+      "words": 9
+    },
+    {
+      "title": "Hirata",
+      "words": 13
+    },
+    {
+      "title": "Red Guard (Lore)",
+      "words": 18
+    },
+    {
+      "title": "Dragonspring Pilgrimage",
+      "words": 20
+    },
+    {
+      "title": "Snake Eyes Shirahagi",
+      "words": 21
+    }
+  ],
+  "pages_per_category": {
+    "Key Items": 73,
+    "Characters": 50,
+    "Enemies": 45,
+    "Mini-Bosses": 31,
+    "Lore": 30,
+    "Pages using DynamicPageList3 parser tag": 29,
+    "Bosses": 18,
+    "Prosthetic Tools": 10,
+    "Locations": 9,
+    "Chapters": 8,
+    "Dialogue": 4,
+    "Endings": 4,
+    "Items": 4,
+    "Memories": 3,
+    "Dialogues": 2,
+    "Weapons": 2,
+    "Combat": 1
+  }
+}

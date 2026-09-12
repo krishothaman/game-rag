@@ -1,0 +1,39 @@
+{
+  "title": "Flame Vent",
+  "url": "https://sekiro-shadows-die-twice.fandom.com/wiki/Flame_Vent",
+  "categories": [
+    "Prosthetic Tools"
+  ],
+  "sections": [
+    {
+      "heading": "Introduction",
+      "level": 1,
+      "text": "A Prosthetic Tool made from a loaded Flame Barrel. Costs Spirit Emblems to use.\nDeals fire damage to enemies via a short-range blast of fire while also inflicting Burn status.\nIt is difficult to control the rage of those with \"Red Eyes\" through the power of man alone. They do, however, fear the flame above all else. This tool has the power to make them tremble."
+    },
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "Unlocked by giving the Flame Barrel to the Sculptor. It is found in a bonfire at Hirata Estate, after the Estate Path Idol."
+    },
+    {
+      "heading": "Ability",
+      "level": 2,
+      "text": "Fire Breath: Shoots a blast of fire in front of Wolf. Costs 3 3 Spirit Emblems to use."
+    },
+    {
+      "heading": "Spring-load Flame Vent",
+      "level": 2,
+      "text": "A Flame Barrel fitted with a gunpowder-loaded mechanism. Costs Spirit Emblems to use.\nDeals damage to enemies with gouts of fire, inflicting Burn status abnormality. The spring mechanism can also be charged to release a massive blast of flames and hot air, sending opponents flying.\nPrerequisites | Spring-load Firecracker\nUpgrade Cost | 400 400\nScrap Iron x3\nBlack Gunpowder x4\nSpirit Emblem Cost | 3 3 Spirit Emblems\nFire Breath\nShoot fire in front of you.\n(Hold) Flame Blast\nCharge up the spring mechanism to unleash a fire blast in front of you.\nThe flame blast knocks enemies backward."
+    },
+    {
+      "heading": "Okinaga's Flame Vent",
+      "level": 2,
+      "text": "A barrel containing smoldering resin that acts as an explosive catalyst. Costs Spirit Emblems to use.\nEmits a short-range flame blast. Continuous fire damage will inflict the burn status.\nIt is able to maintain a continues stream of flames due to the smoldering resin inside of the tube mechanism.\nPrerequisites | Spring-load Firecracker\nLoaded Umbrella - Magnet\nUpgrade Cost | 1000 1000\nPine Resin Ember\nScrap Magnetite x2\nBlack Gunpowder x6\nSpirit Emblem Cost | 3 3 Spirit Emblems\nFire Breath\nShoots a blast of fire in front of you.\n(Hold) Flame Blast\nCharge up the spring mechanism to release a huge blast of fire before you. The powerful blast knocks enemies backward.\n(Press, Release, Then Hold) Flowing Flames\nA continuous spray of fire before you."
+    },
+    {
+      "heading": "Lazulite Sacred Flame",
+      "level": 2,
+      "text": "A Flame Barrel blessed with the favor of the Fountainhead Lapis Lazuli. Costs Spirit Emblems to use.\nDamages even apparitions with its blazing purple flame. The flame does not, however, inflict the Burn status abnormality.\nThe sacred lapis lazuli fires are divine. Cleanse the deep-seated hatred with flame.\nPrerequisites | Spring-load Firecracker\nLoaded Umbrella - Magnet\nOkinaga's Flame Vent\nSuzaku's Lotus Umbrella\nUpgrade Cost | 3000 3000\nLapis Lazuli x3\nFulminated Mercury x4\nLump of Grave Wax x4\nYellow Gunpowder x7\nLump of Fat Wax x7\nSpirit Emblem Cost | 3 3 Spirit Emblems\nSacred Flame\nShoot flames of holy power before you. Effective against apparitions.\n(Hold) Sacred Flame Blast\nRelease a blast of holy flame before you. The powerful blast knocks enemies backward.\n(Hold then release) Flowing Sacred Flames\nA continuous spray of holy flame before you."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "title": "Main Hall Monk",
+  "url": "https://sekiro-shadows-die-twice.fandom.com/wiki/Main_Hall_Monk",
+  "categories": [
+    "Characters"
+  ],
+  "sections": [
+    {
+      "heading": "Description",
+      "level": 2,
+      "text": "The Main Hall Monk (即身仏の僧正, self-mummified high Buddhist priest) of Senpou Temple sits solitary, mourning the tragic fate of the only surviving divine child.\nHe'll entrusts Wolf with the Holy Chapter: Infested, asking him to give it to the Divine Child of Rejuvenation, so that she can learn the reason of her destiny."
+    },
+    {
+      "heading": "Location",
+      "level": 2,
+      "text": "- Main Hall: just past the Sculptor's Idol."
+    },
+    {
+      "heading": "Ashina Castle (Ashina Castle)",
+      "level": 3,
+      "text": "Talk to the Faithful One on the bridge to discover there's a \"special holy person\" living in Senpou Temple."
+    },
+    {
+      "heading": "Senpou Temple ( Main Hall )",
+      "level": 3,
+      "text": "Interrogate the Main Hall Monk about the \"special holy person\" to receive Holy Chapter: Infested, which must be given to the Divine Child to progress through her questline.\n- Since the Main Hall Monk will disappear after Isshin is questioned about the Mortal Blade, if not retrieved prior, Holy Chapter: Infested will be found at the bottom of the pond past the Temple Grounds Sculptor's Idol, requiring the Mibu Breathing Technique dropped by the Corrupted Monk to be reached."
+    },
+    {
+      "heading": "Dialogue",
+      "level": 2,
+      "text": "First Encounter | Monk: Children of the Rejuvenating Waters... forgive me! That child... she's the only one left... She must be lonely... Trapped in that room by herself... she must be so lonely...Hmm? You there, who are you...? What business do you have with Senpou Temple?\nSaying Nothing | Wolf: .....\nMonk: You have no answer? Then you should leave.\nTalking Again After Saying Nothing | Monk: Is there something else?\nAsking About the \"Special Holy Person\" | Wolf: I'm told that a special holy person lives here.\nMonk: Remarkably holy... That would be the child, I imagine. She's not here anymore. It's my fault... The child, she's confined within the Inner Sanctum. It's impossible to see her now...\nWolf: I see.\nMonk: Are you a shinobi?\nWolf: .....\nMonk: Hmm... If that's the case, then actually... I have a favour to ask of you. The child wanted to know... the reason for her fate. If you do see her by some chance, please give her this...\n(Gives Holy Chapter: Infested) It's the least I can do for my own atonement...\nWolf: All right.\nAfter receiving Holy Chapter: Infested | Monk: This temple... It's no longer a place where decent people should be. ...Hm? That Smell... So you're the one who works for the Divine Child of the Dragon's Blood.\nWolf: That's right.\nMonk: The Divine Heir is truly exalted... But exalted or not... Man is still man. Ohh... I'm so foolish that... I didn't understand that myself... Don't... Don't leave your Divine Heir on his own. Leave... It's too late to regret once you've already lost them...\nTalking Again | Monk: ........\nWolf: Hello?"
+    },
+    {
+      "heading": "Notes",
+      "level": 2,
+      "text": "- Can't be infected by Dragonrot."
+    }
+  ]
+}

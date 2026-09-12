@@ -1,0 +1,39 @@
+{
+  "title": "Loaded Axe",
+  "url": "https://sekiro-shadows-die-twice.fandom.com/wiki/Loaded_Axe",
+  "categories": [
+    "Prosthetic Tools"
+  ],
+  "sections": [
+    {
+      "heading": "Introduction",
+      "level": 1,
+      "text": "A Prosthetic Tool loaded with a heavy Shinobi Axe. Costs Spirit Emblems to use.\nThe strength of the Loaded Axe lies in its heft.\nOne strike can easily turn a wooden shield into splinters or shred an enemy's posture."
+    },
+    {
+      "heading": "Overview",
+      "level": 2,
+      "text": "This tool is unlocked by giving the Shinobi Axe of the Monkey to the Sculptor. It is found in a small shrine in Hirata Estate near two guards, bickering about raiding hallowed sites.\nThe Loaded Axe is one of the more straightforward Prosthetic Tool with the base feature of allowing Sekiro to do a powerful overhead slam with the axe's heavy blade, dealing more vitality and posture damage in a single hit than a regular swing with Kusabimaru, though at the cost of a lengthy wind-up. This overhead slam gives a momentary resistance to staggering from all but the most powerful (or fatal) attacks, meaning Sekiro will finish the attack animation even if he's taking small hits from enemies. This could both work as an advantage for or undoing of players because the attack animation cannot be cancelled unless Sekiro dies or is caught by a strong/grab attack, thus understanding an enemy's attack pattern is vital in using the tool effectively and safely. The stagger resistance effect is carried over into the Tool's Fang and Blade attack animation.\nAll variant of the Loaded Axe are capable of breaking wooden shields and the larger-sized wooden hats of Senpou temple assassins, and this is usually the most obvious incentive to use the Loaded Axe. Other possible use includes punishing enemies who are in a wind-up of doing a powerful attack or those who are recovering after doing one. The Mid-Air Prosthetic Tool allows a more instantaneous use of the Prosthetic Tool, since the overhead slam has a much shorter wind-up when executed mid-air; This gives player a powerful air-to-ground attack that makes jumping opportunities especially rewarding: players can directly counter enemies who do sweep attacks (that are usually avoided by jumping straight up) or add a powerful finisher to kick-jump maneuver.\nThe Spring Load upgrade adds a feature of spinning attack where Sekiro can continuously spin horizontally in a certain rhythm with the Axe acting as the centrifugal force. This attack shares the same lengthy wind-up and cost 2 Spirit emblems per-spin. Concluding the attack undisturbed will have Sekiro finish with a regular overhead slam. While good at inflicting high damage to multiple enemies, Sekiro can't move around quickly while spinning, thus this attack is best used in a tight room against enemies who both stagger easily and aren't too agile.\nThe Sparking Axe upgrade is an overall improvement from previous forms. While keeping the features of the Spring Load, the axe blade now ignites with combustive flame when in use, increasing its Posture and Vitality damage and allowing it to build up the Burn status on enemies. The overhead slam in particular creates huge explosion of fire that can catch enemies around the impact. This upgrade is arguably the best variant for players who make god use of oils to easily ignite enemies and disable their Posture recovery.\nLazulite Axe is more of a trade-off compared to the Sparking Axe rather than a straightforward improvement. This variant lacks the ability to build up Burn status, but comes with a guard-piercing effect on top of the highest Vitality and Posture damage of any Loaded Axe variant. This upgrade in general is more suited for players who actively engage in exchange of physical blows without relying on status build-ups. In a more specific occasion, the axe's blow has the same effect as Snap Seeds, dispelling illusions such as those utilized by Lady Butterfly and deals massive damage against the Corrupted Monk illusion of Mibu Village."
+    },
+    {
+      "heading": "Ability",
+      "level": 2,
+      "text": "Strike: Swing the axe down from above to strike an enemy. Destroys wooden shields. Costs 2 2 Spirit Emblems to use."
+    },
+    {
+      "heading": "Spring-load Axe",
+      "level": 2,
+      "text": "A Loaded Axe reinforced with a spring mechanism. Costs Spirit Emblems to use.\nThe strength of the Loaded Axe lies in its heft. The weight allows one to shrug off incoming attacks, and can easily turn a wooden shield into splinters.\nStoring and unleashing energy in the spring mechanism allows for large, sweeping attacks despite its weight.\nPrerequisites | Spinning Shuriken\nUpgrade Cost | 400 400\nScrap Iron x5\nSpirit Emblem Cost | 2 2 Spirit Emblems\nStrike\nSwing the axe down from above to strike an enemy. Destroys wooden shields.\n(Hold) Whirling Strike\nWhirl the axe in circles to strike enemies. Pressing the associated button during Whirling Strike will cause one to whirl again, continuing the attack."
+    },
+    {
+      "heading": "Sparking Axe",
+      "level": 2,
+      "text": "A loaded Axe with an attached percussion hammer to create flame. Costs Spirit Emblems to use.\nMetes out attacks bathed in flame from axe's blade. Hitting the sparking percussion hammer causes a violent eruption of flames and increases the effective area of the attack.\nThis is both firearm and heavy axe.\nPrerequisites | Spinning Shuriken\nSpring-load Axe\nImproved Sabimaru\nor\nSpinning Shuriken\nSpring-load Firecracker\nDouble Divine Abduction\nLong Spark\nUpgrade Cost | 1000 1000\nAdamantite Scrap x2\nYellow Gunpowder x2\nScrap Iron x4\nBlack Gunpowder x4\nSpirit Emblem Cost | 2 2 Spirit Emblems\nSpark\nBring a flaming axe down from above to strike an enemy. Destroys shields made of wood, and creates a roar of flames on hit.\n(Hold) Whirling\nWhirling the flaming axe around in circles to strike enemies. Pressing the associated button during Whirling Strike will cause one to whirl again, continuing the attack."
+    },
+    {
+      "heading": "Lazulite Axe",
+      "level": 2,
+      "text": "A Loaded Axe blessed with the favor of the Fountainhead Lapis Lazuli. Costs Spirit Emblems to use.\nThe hefty lazulite blade inflicts damage even on guarding enemies. The sound of the lapis lazuli blade striking home creates a powerful reverberation capable of dispelling enemy illusions.\nPrerequisites | Spinning Shuriken\nSpring-load Axe\nImproved Sabimaru\nSparking Axe\nPurple Fume Spark\nor\nSpinning Shuriken\nSpring-load Firecracker\nDouble Divine Abduction\nMountain Echo\nPhoenix's Lilac Umbrella\nMalcontent\nUpgrade Cost | 3000 3000\nLapis Lazuli x3\nAdamantite Scrap x5\nFulminated Mercury x3\nLump of Grave Wax x3\nSpirit Emblem Cost | 2 2 Spirit Emblems\nLazulite Strike\nSwing the heavy Lazulite Axe downward, causing a sound shockwave that dispels illusions.\n(Hold) Lazulite Scythe\nWhirl the heavy Lazulite Axe around in circles to strike enemies. Pressing the associated button during Lazulite Scythe will cause one to whirl again, continuing the attack."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Shura Storyteller",
+  "url": "https://sekiro-shadows-die-twice.fandom.com/wiki/Shura_Storyteller",
+  "categories": [
+    "Characters"
+  ],
+  "sections": [
+    {
+      "heading": "Description",
+      "level": 2,
+      "text": "Shura Storyteller\nAshina Castle\nAfter Gyoubu is defeated, she'll warn Wolf that the fires of war have not quenched and that soon more death will infest Ashina.\nAs Ashina Castle is raided by the Shinoby Army of the Interior Ministry, she predicts that a demon will be born from the upcoming battle between the Ashina and the Central Forces.\nOnce Wolf kills the Demon of Hatred, the Shura Storyteller will ask the shinobi if he knew who that creature really was, admonishing him to not walk the path of the flames of hatred."
+    },
+    {
+      "heading": "Location",
+      "level": 2,
+      "text": "- Ashina Castle Gate Fortress: inside the building with the Tengu of Ashina, in the alcove next to the shortcut gate.\nAs Ashina Castle is invaded by Owl's Shinobi Army, she moves to the spot where the Tengu was initially found."
+    },
+    {
+      "heading": "Dialogue",
+      "level": 2,
+      "text": "First encounter | Shura Storyteller: Oh...? You survived? That accursed Gyoubu's finally a corpse, I take it? That changes nothing, you know. There'll be more wars, there'll be more corpses, and deep-seated hatred will run wild. Where's all that hatred go? Haven't you ever wondered? Guess not. Guess you haven't. That's why I pity you, and I pitied him.\nSpeaking again | Shura Storyteller: Now then, be gone already. There's no end to war, no matter what this old hag says. Your duties will never change either. That's just how it is.\nAfter Ashina Castle is invaded for the first time | Shura Storyteller: You want something? If not, be gone. ...War is on the horizon. A dreadful one at that. The dead will rise as mountains, the hate will flow like an inferno... It will give birth to a demon, I'm certain of it. Now then, be gone already. I doubt you'd want to meet a demon, would you?\nAfter defeating Demon of Hatred | Shura Storyteller: Oh...? You survived? ... You know, don't you? You know who the one-armed demon was before...\nIf Wolf hasn't recognized the Sculptor | Wolf: No...\nShura Storyteller: (Hmph...) I see. It might be better that way. What a fate, to be set ablaze in the fires of hatred and suffer eternally as a demon... You put an end to his misery. That's all it was.\nIf Wolf has recognized the Sculptor | Wolf: Yes...\nShura Storyteller: (Hmph...) Then you know there's no reason to lose heart. To carve and sculpt buddhas for so long, only to be wreathed in the flames of hatred and turn into a demon... It was the fate he made for himself, to pay for his own mistakes. And you put an end to that. You sent him on his way. ... I'm sure he's grateful for that...\nSpeaking | Shura Storyteller: ... Some advice. The hatred he channeled has lost its vessel for now. The longer the fires of war rage on, the more ashen this world will become. ... That does not mean you should step into his place.\nSpeaking Again | Shura Storyteller: Now then, be gone already. You have your duties... Things you must accomplish, yes?"
+    },
+    {
+      "heading": "Notes",
+      "level": 2,
+      "text": "- Can't be infected by Dragonrot.\n- For Wolf to recognize the Sculptor during the fight with the Demon of Hatred, it's necessary to follow these steps before defeating Great Shinobi - Owl:\nOffer the Unrefined Sake, Monkey Booze and Ashina Sake (order doesn't matter) to the Sculptor.\nDefeat Lady Butterfly and ask the Sculptor \"What the Buddha showed to him\".\nWhen the first invasion of Ashina Castle is triggered, eavesdrop on the Sculptor and Emma discussing and then talk to Emma to have her disappear upon reloading the area.\nTalk to the Sculptor to have him ask Wolf to kill him when the time comes."
+    }
+  ]
+}
