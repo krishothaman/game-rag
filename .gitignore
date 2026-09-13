@@ -19,3 +19,6 @@ desktop.ini
 # Raw wiki downloads: large and re-creatable with `uv run python -m game_rag collect`
 data/raw/
 *.tmp
+
+# chromadb files, rebuild with `uv run python -m game_rag index`
+data/library/

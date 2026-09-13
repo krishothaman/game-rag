@@ -25,3 +25,15 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 RAW_DIR = PROJECT_ROOT / "data" / "raw"
 CLEAN_DIR = PROJECT_ROOT / "data" / "clean"
 STATS_FILE = PROJECT_ROOT / "data" / "stats.json"
+
+# level 1 rag settings
+GAME = "Sekiro"
+CHAT_MODEL = "qwen3.5:4b"
+EMBED_MODEL = "qwen3-embedding:0.6b"
+# qwen3-embedding wants questions to come with a little instruction in front, documents go in plain
+QUERY_INSTRUCTION = "Instruct: Given a question about Sekiro lore, retrieve wiki passages that answer it\nQuery: "
+CHUNK_WORDS = 300
+CHUNK_OVERLAP = 50
+TOP_K = 5
+LIBRARY_DIR = PROJECT_ROOT / "data" / "library"
+COLLECTION = "sekiro"
