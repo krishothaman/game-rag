@@ -1,10 +1,17 @@
 import argparse
 import json
 import sys
+import time
+
+import ollama
 
 from game_rag import config
+from game_rag.answerer import Answerer, cited_numbers
+from game_rag.chunker import chunk_all
 from game_rag.cleaner import clean_all
 from game_rag.collector import collect
+from game_rag.embedder import Embedder
+from game_rag.library import Library
 from game_rag.measure import measure
 from game_rag.titles import file_stem
 from game_rag.wiki_client import WikiClient
@@ -12,22 +19,43 @@ from game_rag.wiki_client import WikiClient
 
 def main(argv=None):
     use_utf8_output()
-    parser = argparse.ArgumentParser(prog="game_rag", description="game_rag data tools")
+    parser = argparse.ArgumentParser(prog="game_rag", description="ask questions about game lore, answered from the wiki")
     commands = parser.add_subparsers(dest="command", required=True)
     commands.add_parser("collect", help="download lore pages from the wiki (safe to re-run)")
     commands.add_parser("clean", help="turn raw pages into clean text sections")
     commands.add_parser("stats", help="count pages and words, save data/stats.json")
     show = commands.add_parser("show", help="print one clean page")
     show.add_argument("title", help='exact page title, e.g. "Rot Essence"')
+    commands.add_parser("index", help="chunk + embed the clean pages into the library")
+    ask = commands.add_parser("ask", help="ask one question")
+    ask.add_argument("question")
+    ask.add_argument("--debug", action="store_true", help="show the chunks that were found")
+    chat = commands.add_parser("chat", help="keep asking questions until you type exit")
+    chat.add_argument("--debug", action="store_true", help="show the chunks that were found")
     args = parser.parse_args(argv)
 
-    if args.command == "collect":
-        return run_collect()
-    if args.command == "clean":
-        return run_clean()
-    if args.command == "stats":
-        return run_stats()
-    return run_show(args.title)
+    try:
+        if args.command == "collect":
+            return run_collect()
+        if args.command == "clean":
+            return run_clean()
+        if args.command == "stats":
+            return run_stats()
+        if args.command == "index":
+            return run_index()
+        if args.command == "ask":
+            return run_ask(args.question, args.debug)
+        if args.command == "chat":
+            return run_chat(args.debug)
+        return run_show(args.title)
+    except ConnectionError:
+        print("Can't reach Ollama. Open the Ollama app (or run `ollama serve`) and try again.")
+        return 1
+    except ollama.ResponseError as e:
+        print(f"Ollama said: {e.error}")
+        if e.status_code == 404:
+            print(f"Missing a model? Run: ollama pull {config.CHAT_MODEL}  and  ollama pull {config.EMBED_MODEL}")
+        return 1
 
 
 def run_collect():
@@ -80,6 +108,74 @@ def run_show(title):
     for s in page["sections"]:
         print(f"{'#' * s['level']} {s['heading']}")
         print(s["text"] + "\n")
+    return 0
+
+
+def make_library():
+    return Library(Embedder())
+
+
+def make_answerer():
+    return Answerer()
+
+
+def run_index():
+    chunks = chunk_all(config.CLEAN_DIR)
+    if not chunks:
+        print("No clean pages. Run `uv run python -m game_rag clean` first.")
+        return 1
+    print(f"Cut {len(chunks)} chunks from the clean pages. Embedding them now...")
+    started = time.time()
+    make_library().rebuild(chunks)
+    print(f"Library ready in {time.time() - started:.0f}s at {config.LIBRARY_DIR}")
+    return 0
+
+
+def run_ask(question, debug):
+    library = make_library()
+    if library.count() == 0:
+        print("The library is empty. Run `uv run python -m game_rag index` first.")
+        return 1
+    return answer_question(question, library, make_answerer(), debug)
+
+
+def run_chat(debug):
+    library = make_library()
+    if library.count() == 0:
+        print("The library is empty. Run `uv run python -m game_rag index` first.")
+        return 1
+    answerer = make_answerer()
+    print("Ask about Sekiro lore. Type exit to quit.\n")
+    while True:
+        try:
+            question = input("you> ").strip()
+        except (EOFError, KeyboardInterrupt):
+            print()
+            return 0
+        if question.lower() in ("", "exit", "quit"):
+            return 0
+        answer_question(question, library, answerer, debug)
+        print()
+
+
+def answer_question(question, library, answerer, debug=False):
+    hits = library.search(question)
+    if debug:
+        print("--- chunks found ---")
+        for i, h in enumerate(hits, start=1):
+            print(f"[{i}] similarity {h.similarity:.2f}  {h.chunk.page_title} > {h.chunk.section}")
+            print(f"    {h.chunk.text[:300]}{'...' if len(h.chunk.text) > 300 else ''}")
+        print("--------------------\n")
+
+    answer = answerer.answer(question, hits)
+    print(answer)
+
+    cited = cited_numbers(answer, len(hits))
+    if cited:
+        print("\nSources:")
+        for n in cited:
+            c = hits[n - 1].chunk
+            print(f"  [{n}] {c.page_title} > {c.section}  {c.url}")
     return 0
 
 
