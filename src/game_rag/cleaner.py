@@ -9,7 +9,7 @@ from game_rag.titles import file_stem
 
 HEADINGS = {"h2": 2, "h3": 3, "h4": 4, "h5": 5, "h6": 6}
 
-# stuff on wiki pages that's never lore - pics, infoboxes, edit links, galleries, tab buttons
+# stuff on wiki pages that aint lore
 JUNK = [
     "script", "style", "noscript", "figure", "img", "svg",
     "aside.portable-infobox", ".mw-editsection", ".navbox", ".wikia-gallery",
@@ -17,9 +17,9 @@ JUNK = [
     ".wds-tabs__wrapper", "div.fluid.hidden",
 ]
 
-# menus are basically all links. real content (even dialogue tables) is way under this
+
 NAV_LINK_SHARE = 0.5
-# a one-cell top row shorter than this is a table title like "Dialogue", longer ones are quotes
+
 TITLE_MAX_CHARS = 40
 
 
@@ -83,7 +83,6 @@ def clean_html(html, dropped_sections=config.DROPPED_SECTIONS):
             el.decompose()
 
     sections = []
-    # text before the first heading goes in a fake "Introduction" section
     heading, level, parts = "Introduction", 1, []
     keeping = True
     dropped_level = None
@@ -98,14 +97,14 @@ def clean_html(html, dropped_sections=config.DROPPED_SECTIONS):
         if found:
             add_section(sections, heading, level, parts, keeping)
             new_level, new_heading = found
-            # a subsection of something we're dropping (like h3 under Trivia) gets dropped too
+           
             if dropped_level is not None and new_level > dropped_level:
                 keeping = False
             else:
                 dropped_level = new_level if is_dropped(new_heading, dropped_sections) else None
                 keeping = dropped_level is None
             heading, level, parts = new_heading, new_level, []
-            # if the "heading" was a table's title row, the rest of that table goes in this section
+            
             if keeping and child.name == "table":
                 text = table_text(child, skip_title=True)
                 if text:
@@ -129,7 +128,7 @@ def add_section(sections, heading, level, parts, keeping):
 def heading_of(el):
     if el.name in HEADINGS:
         return HEADINGS[el.name], tidy(el.get_text(" "))
-    # newer wiki pages wrap headings in a div
+    
     if el.name == "div" and "mw-heading" in (el.get("class") or []):
         inner = el.find(list(HEADINGS))
         if inner is not None:
@@ -139,7 +138,7 @@ def heading_of(el):
 
 def is_dropped(heading, dropped_sections):
     h = heading.lower()
-    # "Emma's Cut Dialogue" should go too, not just a plain "Cut Dialogue"
+    
     if any(h == name or h.endswith(" " + name) for name in dropped_sections):
         return True
     return any(word in h for word in config.DROPPED_KEYWORDS)
@@ -154,7 +153,7 @@ def is_navigation(el):
 
 
 def pseudo_heading(el, dropped_sections):
-    # tables with a one-cell title row like "Dialogue" or "Loot" work like headings
+   
     if el.name == "table":
         title = table_title(el)
         if title:
@@ -186,7 +185,7 @@ def element_text(el):
     if el.name in ("ul", "ol"):
         items = (inline_text(li) for li in el.find_all("li", recursive=False))
         return "\n".join(f"- {item}" for item in items if item)
-    # divs (like tab boxes) can have tables and lists inside, so go through what's in them
+    
     if el.name == "div":
         parts = []
         for child in el.children:
@@ -199,9 +198,9 @@ def element_text(el):
 
 
 def table_text(table, skip_title=False):
-    # each row becomes "cell | cell | cell"
+    
     rows = []
-    # only this table's own rows. a table inside a cell already gets read with that cell
+   
     trs = [tr for tr in table.find_all("tr") if tr.find_parent("table") is table]
     if skip_title:
         trs = trs[1:]
@@ -220,6 +219,6 @@ def inline_text(el):
 
 
 def tidy(text):
-    # squash extra spaces and throw away empty lines
+    
     lines = (re.sub(r"\s+", " ", line).strip() for line in text.splitlines())
     return "\n".join(line for line in lines if line)

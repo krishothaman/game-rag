@@ -5,6 +5,8 @@ description = "game_rag: a free, open-model RAG learning project"
 requires-python = ">=3.12"
 dependencies = [
     "beautifulsoup4>=4.15.0",
+    "chromadb>=1.5.9",
+    "ollama>=0.6.2",
     "requests>=2.34.2",
 ]
 
