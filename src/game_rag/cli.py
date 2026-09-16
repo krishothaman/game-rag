@@ -6,7 +6,7 @@ import time
 import ollama
 
 from game_rag import config
-from game_rag.answerer import Answerer, cited_numbers
+from game_rag.answerer import NOT_COVERED, Answerer, cited_numbers
 from game_rag.chunker import chunk_all
 from game_rag.cleaner import clean_all
 from game_rag.collector import collect
@@ -33,7 +33,8 @@ def main(argv=None):
     ask.add_argument("--debug", action="store_true", help="show the chunks that were found")
     chat = commands.add_parser("chat", help="keep asking questions until you type exit")
     chat.add_argument("--debug", action="store_true", help="show the chunks that were found")
-    commands.add_parser("score", help="run the golden questions and score the rag")
+    score = commands.add_parser("score", help="run the golden questions and score the rag")
+    score.add_argument("--answers", action="store_true", help="also answer each question and let you judge it")
     args = parser.parse_args(argv)
 
     try:
@@ -50,7 +51,7 @@ def main(argv=None):
         if args.command == "chat":
             return run_chat(args.debug)
         if args.command == "score":
-            return run_score()
+            return run_score(args.answers)
         return run_show(args.title)
     except ConnectionError:
         print("Can't reach Ollama. Open the Ollama app (or run `ollama serve`) and try again.")
@@ -162,16 +163,18 @@ def run_chat(debug):
         print()
 
 
-def run_score():
+def run_score(with_answers=False, ask=input):
     library = make_library()
     if library.count() == 0:
         print("The library is empty. Run `uv run python -m game_rag index` first.")
         return 1
 
-    questions = [q for q in load_golden(config.GOLDEN_FILE) if not q.not_covered]
+    golden = load_golden(config.GOLDEN_FILE)
+    hits_for = {q.id: library.search(q.question) for q in golden}
+    questions = [q for q in golden if not q.not_covered]
     found_count = 0
     for q in questions:
-        hits = library.search(q.question)
+        hits = hits_for[q.id]
         found = pages_found(q, hits)
         if found:
             found_count += 1
@@ -182,7 +185,30 @@ def run_score():
             print(f"         got:    {', '.join(h.chunk.page_title for h in hits)}")
 
     print(f"\nRetrieval: {found_count}/{len(questions)} questions had a right page in the top {config.TOP_K}")
+    if not with_answers:
+        return 0
+
+    answerer = make_answerer()
+    correct = 0
+    for q in golden:
+        hits = hits_for[q.id]
+        print(f"\n#{q.id} {q.question}")
+        answer = answerer.answer(q.question, hits)
+        print(answer)
+        print_sources(answer, hits)
+        print(f"  should be: {NOT_COVERED if q.not_covered else '; '.join(q.facts)}")
+        if judged_correct(ask):
+            correct += 1
+
+    print(f"\nAnswers: {correct}/{len(golden)} judged correct")
     return 0
+
+
+def judged_correct(ask):
+    while True:
+        reply = ask("  correct? [y/n] ").strip().lower()
+        if reply in ("y", "n"):
+            return reply == "y"
 
 
 def answer_question(question, library, answerer, debug=False):
@@ -196,14 +222,17 @@ def answer_question(question, library, answerer, debug=False):
 
     answer = answerer.answer(question, hits)
     print(answer)
+    print_sources(answer, hits)
+    return 0
 
+
+def print_sources(answer, hits):
     cited = cited_numbers(answer, len(hits))
     if cited:
         print("\nSources:")
         for n in cited:
             c = hits[n - 1].chunk
             print(f"  [{n}] {c.page_title} > {c.section}  {c.url}")
-    return 0
 
 
 def use_utf8_output():

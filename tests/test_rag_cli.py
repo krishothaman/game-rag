@@ -82,3 +82,22 @@ def test_score_prints_each_question_and_the_retrieval_score(monkeypatch, tmp_pat
     assert "MISSED #2" in out
     assert "Retrieval: 1/2" in out
     assert "#3" not in out
+
+
+def test_score_with_answers_lets_you_judge_each_answer(monkeypatch, tmp_path, capsys):
+    golden = tmp_path / "golden.jsonl"
+    golden.write_text(
+        '{"id": 1, "question": "What is Dragonrot?", "facts": ["an illness"], "pages": ["Rot Essence"]}\n'
+        '{"id": 2, "question": "Is Radahn in Sekiro?", "facts": [], "pages": [], "not_covered": true}\n',
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(cli.config, "GOLDEN_FILE", golden)
+    monkeypatch.setattr(cli, "make_library", lambda: FakeLibrary(HITS))
+    monkeypatch.setattr(cli, "make_answerer", lambda: FakeAnswerer('An illness: "the illness that has gripped Ashina" [1]'))
+    replies = iter(["maybe", "y", "n"])
+    assert cli.run_score(with_answers=True, ask=lambda prompt: next(replies)) == 0
+    out = capsys.readouterr().out
+    assert "should be: an illness" in out
+    assert "should be: My library doesn't cover that." in out
+    assert "[1] Rot Essence > Overview" in out
+    assert "Answers: 1/2 judged correct" in out

@@ -3,3 +3,8 @@
 {"id": 3, "question": "Who is Emma?", "facts": ["a doctor", "saved from a battlefield by the Sculptor", "adopted by Lord Dogen", "the Gentle Blade"], "pages": ["Emma"]}
 {"id": 4, "question": "How many phases does the Guardian Ape have?", "facts": ["2 phases"], "pages": ["Guardian Ape"]}
 {"id": 5, "question": "Is Radahn the final boss in Elden Ring?", "facts": [], "pages": [], "not_covered": true}
+{"id": 6, "question": "What are Prayer Beads?", "facts": ["offer 4 at a Sculptor's Idol", "increases max Vitality and Posture"], "pages": ["Prayer Bead"]}
+{"id": 7, "question": "How many main bosses are there in Sekiro?", "facts": [], "pages": [], "not_covered": true}
+{"id": 8, "question": "Who is Genichiro Ashina?", "facts": ["mandatory boss", "adopted by the Ashina after his mother died", "current leader of the Ashina Clan", "wants Kuro's immortality"], "pages": ["Genichiro Ashina"]}
+{"id": 9, "question": "In the Shura ending, which two bosses do you fight?", "facts": ["Emma, the Gentle Blade", "Isshin Ashina"], "pages": ["Ending 1: Shura", "Isshin Ashina (Shura)"]}
+{"id": 10, "question": "What happens to Radahn in the Elden Ring DLC?", "facts": [], "pages": [], "not_covered": true}
