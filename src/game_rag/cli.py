@@ -11,6 +11,7 @@ from game_rag.chunker import chunk_all
 from game_rag.cleaner import clean_all
 from game_rag.collector import collect
 from game_rag.embedder import Embedder
+from game_rag.golden import load_golden, pages_found
 from game_rag.library import Library
 from game_rag.measure import measure
 from game_rag.titles import file_stem
@@ -32,6 +33,7 @@ def main(argv=None):
     ask.add_argument("--debug", action="store_true", help="show the chunks that were found")
     chat = commands.add_parser("chat", help="keep asking questions until you type exit")
     chat.add_argument("--debug", action="store_true", help="show the chunks that were found")
+    commands.add_parser("score", help="run the golden questions and score the rag")
     args = parser.parse_args(argv)
 
     try:
@@ -47,6 +49,8 @@ def main(argv=None):
             return run_ask(args.question, args.debug)
         if args.command == "chat":
             return run_chat(args.debug)
+        if args.command == "score":
+            return run_score()
         return run_show(args.title)
     except ConnectionError:
         print("Can't reach Ollama. Open the Ollama app (or run `ollama serve`) and try again.")
@@ -156,6 +160,29 @@ def run_chat(debug):
             return 0
         answer_question(question, library, answerer, debug)
         print()
+
+
+def run_score():
+    library = make_library()
+    if library.count() == 0:
+        print("The library is empty. Run `uv run python -m game_rag index` first.")
+        return 1
+
+    questions = [q for q in load_golden(config.GOLDEN_FILE) if not q.not_covered]
+    found_count = 0
+    for q in questions:
+        hits = library.search(q.question)
+        found = pages_found(q, hits)
+        if found:
+            found_count += 1
+        label = "FOUND " if found else "MISSED"
+        print(f"{label} #{q.id} {q.question}  ({len(found)}/{len(q.pages)} pages)")
+        if not found:
+            print(f"         wanted: {', '.join(q.pages)}")
+            print(f"         got:    {', '.join(h.chunk.page_title for h in hits)}")
+
+    print(f"\nRetrieval: {found_count}/{len(questions)} questions had a right page in the top {config.TOP_K}")
+    return 0
 
 
 def answer_question(question, library, answerer, debug=False):

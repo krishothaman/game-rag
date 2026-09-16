@@ -37,3 +37,4 @@ CHUNK_OVERLAP = 50
 TOP_K = 5
 LIBRARY_DIR = PROJECT_ROOT / "data" / "library"
 COLLECTION = "sekiro"
+GOLDEN_FILE = PROJECT_ROOT / "data" / "golden" / "sekiro.jsonl"

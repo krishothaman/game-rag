@@ -64,3 +64,21 @@ def test_ollama_not_running_gets_a_friendly_message(monkeypatch, capsys):
     monkeypatch.setattr(cli, "make_answerer", lambda: FakeAnswerer(error=ConnectionError("nope")))
     assert cli.main(["ask", "What is Dragonrot?"]) == 1
     assert "Ollama" in capsys.readouterr().out
+
+
+def test_score_prints_each_question_and_the_retrieval_score(monkeypatch, tmp_path, capsys):
+    golden = tmp_path / "golden.jsonl"
+    golden.write_text(
+        '{"id": 1, "question": "What is Dragonrot?", "facts": [], "pages": ["Rot Essence"]}\n'
+        '{"id": 2, "question": "Who is Owl?", "facts": [], "pages": ["Owl"]}\n'
+        '{"id": 3, "question": "Is Radahn in Sekiro?", "facts": [], "pages": [], "not_covered": true}\n',
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(cli.config, "GOLDEN_FILE", golden)
+    monkeypatch.setattr(cli, "make_library", lambda: FakeLibrary(HITS))
+    assert cli.main(["score"]) == 0
+    out = capsys.readouterr().out
+    assert "FOUND  #1" in out
+    assert "MISSED #2" in out
+    assert "Retrieval: 1/2" in out
+    assert "#3" not in out
