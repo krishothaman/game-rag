@@ -35,11 +35,23 @@ def test_short_page_is_one_chunk():
     assert [c.text for c in chunk_page(page, size=10, overlap=3)] == ["A monk who is dying."]
 
 
-def test_chunk_remembers_the_section_it_starts_in():
-    # description is words 0-4, location is 5-19. chunks start at 0, 7, 14
-    page = make_page("Owl", [("Description", numbered(5)), ("Location", numbered(15, 5))])
+def test_chunks_never_cross_a_section_boundary():
+    page = make_page("Owl", [("Description", numbered(5)), ("Location", numbered(8, 5))])
     chunks = chunk_page(page, size=10, overlap=3)
-    assert [c.section for c in chunks] == ["Description", "Location", "Location"]
+    assert [(c.section, c.text) for c in chunks] == [("Description", numbered(5)), ("Location", numbered(8, 5))]
+
+
+def test_small_sections_get_packed_together():
+    page = make_page("Owl", [("A", numbered(3)), ("B", numbered(4, 3)), ("C", numbered(8, 7))])
+    chunks = chunk_page(page, size=10, overlap=3)
+    assert [(c.section, c.text) for c in chunks] == [("A", numbered(7)), ("C", numbered(8, 7))]
+
+
+def test_long_section_after_a_short_one_is_split_on_its_own():
+    page = make_page("Owl", [("A", numbered(3)), ("B", numbered(24, 3))])
+    chunks = chunk_page(page, size=10, overlap=3)
+    assert [c.section for c in chunks] == ["A", "B", "B", "B"]
+    assert chunks[1].text == numbered(10, 3)
 
 
 def test_chunk_labels_and_ids():
@@ -72,3 +84,11 @@ def test_chunk_all_reads_every_clean_page(tmp_path):
         (tmp_path / f"{file_stem(title)}.json").write_text(json.dumps(page), encoding="utf-8")
     chunks = chunk_all(tmp_path)
     assert sorted(c.page_title for c in chunks) == ["Emma", "Owl"]
+
+
+def test_embed_text_starts_with_the_page_and_section():
+    page = make_page("Ending 2: Immortal Severance", [("Overview", "Wolf gives Kuro the Tears.")],
+                     categories=("Endings",))
+    chunk = chunk_page(page)[0]
+    assert chunk.text == "Wolf gives Kuro the Tears."
+    assert chunk.embed_text == "Ending 2: Immortal Severance > Overview\nWolf gives Kuro the Tears."

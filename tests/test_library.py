@@ -55,3 +55,11 @@ def test_empty_library_finds_nothing(tmp_path):
     library = Library(FakeEmbedder(), path=tmp_path)
     assert library.count() == 0
     assert library.search("anything") == []
+
+
+def test_rebuild_embeds_chunks_with_their_page_header(tmp_path):
+    embedder = FakeEmbedder()
+    seen = []
+    embedder.embed_documents = lambda texts: seen.extend(texts) or [embedder.vector(t) for t in texts]
+    Library(embedder, path=tmp_path).rebuild(CHUNKS, log=lambda m: None)
+    assert seen[1] == "Owl > Overview\nOwl is the foster father of Wolf. Owl is a great shinobi."

@@ -41,7 +41,7 @@ class Library:
             self.collection.add(
                 ids=[c.id for c in part],
                 documents=texts,
-                embeddings=self.embedder.embed_documents(texts),
+                embeddings=self.embedder.embed_documents([c.embed_text for c in part]),
                 metadatas=labels,
             )
             log(f"  embedded {min(i + batch, len(chunks))}/{len(chunks)} chunks")

@@ -25,6 +25,10 @@ class Chunk:
     page_type: str
     game: str = config.GAME
 
+    @property
+    def embed_text(self):
+        return f"{self.page_title} > {self.section}\n{self.text}"
+
 
 def page_type(categories):
     for category, kind in PAGE_TYPES:
@@ -33,30 +37,47 @@ def page_type(categories):
     return "lore"
 
 
-def chunk_page(page, size=config.CHUNK_WORDS, overlap=config.CHUNK_OVERLAP):
-    # naive on purpose: glue all the sections together and cut every `size` words
-    words, heading_of_word = [], []
-    for section in page["sections"]:
-        section_words = section["text"].split()
-        words += section_words
-        heading_of_word += [section["heading"]] * len(section_words)
-
-    chunks = []
+def windows(words, size, overlap):
     start = 0
+    while True:
+        yield words[start:start + size]
+        if start + size >= len(words):
+            return
+        start += size - overlap
+
+
+def chunk_page(page, size=config.CHUNK_WORDS, overlap=config.CHUNK_OVERLAP):
+    chunks = []
     kind = page_type(page["categories"])
-    while start < len(words):
+
+    def add(words, heading):
         chunks.append(Chunk(
             id=f"{file_stem(page['title'])}-{len(chunks)}",
-            text=" ".join(words[start:start + size]),
+            text=" ".join(words),
             page_title=page["title"],
-            section=heading_of_word[start],
+            section=heading,
             url=page["url"],
             page_type=kind,
         ))
-        if start + size >= len(words):
-            break
-        # step back a bit so the next chunk repeats the last few words of this one
-        start += size - overlap
+
+    # pack whole sections into a chunk, only split a section when it's too big by itself
+    packed, heading = [], None
+    for section in page["sections"]:
+        words = section["text"].split()
+        if not words:
+            continue
+        if packed and len(packed) + len(words) > size:
+            add(packed, heading)
+            packed = []
+        if len(words) > size:
+            for part in windows(words, size, overlap):
+                add(part, section["heading"])
+            continue
+        if not packed:
+            heading = section["heading"]
+        packed += words
+    if packed:
+        add(packed, heading)
     return chunks
 
 
