@@ -39,3 +39,6 @@ LIBRARY_DIR = PROJECT_ROOT / "data" / "library"
 COLLECTION = "sekiro"
 GOLDEN_FILE = PROJECT_ROOT / "data" / "golden" / "sekiro.jsonl"
 VERDICTS_FILE = PROJECT_ROOT / "data" / "golden" / "sekiro-verdicts.json"
+# locked questions we never tune against, only scored at the end of a level
+HOLDOUT_FILE = PROJECT_ROOT / "data" / "golden" / "holdout.jsonl"
+HOLDOUT_VERDICTS_FILE = PROJECT_ROOT / "data" / "golden" / "holdout-verdicts.json"

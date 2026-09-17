@@ -35,6 +35,7 @@ def main(argv=None):
     chat.add_argument("--debug", action="store_true", help="show the chunks that were found")
     score = commands.add_parser("score", help="run the golden questions and score the rag")
     score.add_argument("--answers", action="store_true", help="also answer each question and let you judge it")
+    score.add_argument("--holdout", action="store_true", help="use the locked held-out questions (end of a level only)")
     args = parser.parse_args(argv)
 
     try:
@@ -51,7 +52,7 @@ def main(argv=None):
         if args.command == "chat":
             return run_chat(args.debug)
         if args.command == "score":
-            return run_score(args.answers)
+            return run_score(args.answers, holdout=args.holdout)
         return run_show(args.title)
     except ConnectionError:
         print("Can't reach Ollama. Open the Ollama app (or run `ollama serve`) and try again.")
@@ -163,13 +164,15 @@ def run_chat(debug):
         print()
 
 
-def run_score(with_answers=False, ask=input):
+def run_score(with_answers=False, ask=input, holdout=False):
     library = make_library()
     if library.count() == 0:
         print("The library is empty. Run `uv run python -m game_rag index` first.")
         return 1
 
-    golden = load_golden(config.GOLDEN_FILE)
+    golden_file = config.HOLDOUT_FILE if holdout else config.GOLDEN_FILE
+    verdicts_file = config.HOLDOUT_VERDICTS_FILE if holdout else config.VERDICTS_FILE
+    golden = load_golden(golden_file)
     hits_for = {q.id: library.search(q.question) for q in golden}
     questions = [q for q in golden if not q.not_covered]
     found_count = 0
@@ -189,7 +192,7 @@ def run_score(with_answers=False, ask=input):
         return 0
 
     answerer = make_answerer()
-    verdicts = load_verdicts(config.VERDICTS_FILE)
+    verdicts = load_verdicts(verdicts_file)
     correct = 0
     for q in golden:
         hits = hits_for[q.id]
@@ -203,7 +206,7 @@ def run_score(with_answers=False, ask=input):
             print(f"  judged before: {'y' if verdicts[key] else 'n'}")
         else:
             verdicts[key] = judged_correct(ask)
-            save_verdicts(config.VERDICTS_FILE, verdicts)
+            save_verdicts(verdicts_file, verdicts)
         if verdicts[key]:
             correct += 1
 

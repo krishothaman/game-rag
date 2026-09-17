@@ -123,3 +123,21 @@ def test_score_remembers_verdicts_and_only_asks_about_new_answers(monkeypatch, t
     monkeypatch.setattr(cli, "make_answerer", lambda: FakeAnswerer("Something new [1]"))
     cli.run_score(with_answers=True, ask=lambda prompt: "n")
     assert "Answers: 0/1 judged correct" in capsys.readouterr().out
+
+
+def test_score_holdout_uses_its_own_questions_and_verdicts(monkeypatch, tmp_path, capsys):
+    dev, holdout = tmp_path / "dev.jsonl", tmp_path / "holdout.jsonl"
+    dev.write_text('{"id": 1, "question": "What is Dragonrot?", "facts": [], "pages": ["Rot Essence"]}\n', encoding="utf-8")
+    holdout.write_text('{"id": 101, "question": "Who is Owl?", "facts": [], "pages": ["Owl"]}\n', encoding="utf-8")
+    monkeypatch.setattr(cli.config, "GOLDEN_FILE", dev)
+    monkeypatch.setattr(cli.config, "HOLDOUT_FILE", holdout)
+    monkeypatch.setattr(cli.config, "VERDICTS_FILE", tmp_path / "verdicts.json")
+    monkeypatch.setattr(cli.config, "HOLDOUT_VERDICTS_FILE", tmp_path / "holdout-verdicts.json")
+    monkeypatch.setattr(cli, "make_library", lambda: FakeLibrary(HITS))
+    monkeypatch.setattr(cli, "make_answerer", lambda: FakeAnswerer("Owl [1]"))
+    assert cli.main(["score", "--holdout"]) == 0
+    out = capsys.readouterr().out
+    assert "#101" in out and "#1 " not in out
+    cli.run_score(with_answers=True, ask=lambda prompt: "y", holdout=True)
+    assert (tmp_path / "holdout-verdicts.json").exists()
+    assert not (tmp_path / "verdicts.json").exists()
