@@ -8,3 +8,8 @@
 {"id": 8, "question": "Who is Genichiro Ashina?", "facts": ["mandatory boss", "adopted by the Ashina after his mother died", "current leader of the Ashina Clan", "wants Kuro's immortality"], "pages": ["Genichiro Ashina"]}
 {"id": 9, "question": "In the Shura ending, which two bosses do you fight?", "facts": ["Emma, the Gentle Blade", "Isshin Ashina"], "pages": ["Ending 1: Shura", "Isshin Ashina (Shura)"]}
 {"id": 10, "question": "What happens to Radahn in the Elden Ring DLC?", "facts": [], "pages": [], "not_covered": true}
+{"id": 11, "question": "What happens to Kuro in the Immortal Severance ending?", "facts": ["Wolf gives him only the Divine Dragon's Tears", "Wolf stabs him with the Mortal Blade", "his ties to immortality are severed"], "pages": ["Ending 2: Immortal Severance"]}
+{"id": 12, "question": "What do you give Kuro to get the Return ending?", "facts": ["Frozen Tears", "Divine Dragon's Tears"], "pages": ["Ending 4: Return"]}
+{"id": 13, "question": "What does a Gourd Seed do?", "facts": ["give it to Emma", "increases the max uses of the Healing Gourd"], "pages": ["Gourd Seed"]}
+{"id": 14, "question": "Who was the Sculptor before he became a sculptor?", "facts": ["a shinobi named Orangutan", "Isshin cut off his arm to stop him becoming Shura"], "pages": ["Sculptor"]}
+{"id": 15, "question": "What was the name of Wolf's mother?", "facts": [], "pages": [], "not_covered": true}

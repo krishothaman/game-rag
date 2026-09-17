@@ -92,6 +92,7 @@ def test_score_with_answers_lets_you_judge_each_answer(monkeypatch, tmp_path, ca
         encoding="utf-8",
     )
     monkeypatch.setattr(cli.config, "GOLDEN_FILE", golden)
+    monkeypatch.setattr(cli.config, "VERDICTS_FILE", tmp_path / "verdicts.json")
     monkeypatch.setattr(cli, "make_library", lambda: FakeLibrary(HITS))
     monkeypatch.setattr(cli, "make_answerer", lambda: FakeAnswerer('An illness: "the illness that has gripped Ashina" [1]'))
     replies = iter(["maybe", "y", "n"])
@@ -101,3 +102,24 @@ def test_score_with_answers_lets_you_judge_each_answer(monkeypatch, tmp_path, ca
     assert "should be: My library doesn't cover that." in out
     assert "[1] Rot Essence > Overview" in out
     assert "Answers: 1/2 judged correct" in out
+
+
+def test_score_remembers_verdicts_and_only_asks_about_new_answers(monkeypatch, tmp_path, capsys):
+    golden = tmp_path / "golden.jsonl"
+    golden.write_text('{"id": 1, "question": "What is Dragonrot?", "facts": ["an illness"], "pages": ["Rot Essence"]}\n',
+                      encoding="utf-8")
+    monkeypatch.setattr(cli.config, "GOLDEN_FILE", golden)
+    monkeypatch.setattr(cli.config, "VERDICTS_FILE", tmp_path / "verdicts.json")
+    monkeypatch.setattr(cli, "make_library", lambda: FakeLibrary(HITS))
+    monkeypatch.setattr(cli, "make_answerer", lambda: FakeAnswerer("An illness [1]"))
+    cli.run_score(with_answers=True, ask=lambda prompt: "y")
+
+    def no_asking(prompt):
+        raise AssertionError("should not ask again")
+
+    cli.run_score(with_answers=True, ask=no_asking)
+    assert "judged before: y" in capsys.readouterr().out
+
+    monkeypatch.setattr(cli, "make_answerer", lambda: FakeAnswerer("Something new [1]"))
+    cli.run_score(with_answers=True, ask=lambda prompt: "n")
+    assert "Answers: 0/1 judged correct" in capsys.readouterr().out

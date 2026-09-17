@@ -38,3 +38,4 @@ TOP_K = 5
 LIBRARY_DIR = PROJECT_ROOT / "data" / "library"
 COLLECTION = "sekiro"
 GOLDEN_FILE = PROJECT_ROOT / "data" / "golden" / "sekiro.jsonl"
+VERDICTS_FILE = PROJECT_ROOT / "data" / "golden" / "sekiro-verdicts.json"

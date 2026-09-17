@@ -11,7 +11,7 @@ from game_rag.chunker import chunk_all
 from game_rag.cleaner import clean_all
 from game_rag.collector import collect
 from game_rag.embedder import Embedder
-from game_rag.golden import load_golden, pages_found
+from game_rag.golden import load_golden, load_verdicts, pages_found, save_verdicts, verdict_key
 from game_rag.library import Library
 from game_rag.measure import measure
 from game_rag.titles import file_stem
@@ -189,6 +189,7 @@ def run_score(with_answers=False, ask=input):
         return 0
 
     answerer = make_answerer()
+    verdicts = load_verdicts(config.VERDICTS_FILE)
     correct = 0
     for q in golden:
         hits = hits_for[q.id]
@@ -197,7 +198,13 @@ def run_score(with_answers=False, ask=input):
         print(answer)
         print_sources(answer, hits)
         print(f"  should be: {NOT_COVERED if q.not_covered else '; '.join(q.facts)}")
-        if judged_correct(ask):
+        key = verdict_key(q, answer)
+        if key in verdicts:
+            print(f"  judged before: {'y' if verdicts[key] else 'n'}")
+        else:
+            verdicts[key] = judged_correct(ask)
+            save_verdicts(config.VERDICTS_FILE, verdicts)
+        if verdicts[key]:
             correct += 1
 
     print(f"\nAnswers: {correct}/{len(golden)} judged correct")
