@@ -15,6 +15,11 @@
       "heading": "Notes",
       "level": 2,
       "text": "- While phase one and two can be poisoned, it can't be inflicted on phase three."
+    },
+    {
+      "heading": "Phases",
+      "level": 2,
+      "text": "This boss fight has 3 phases: Phase 1, Phase 2, Phase 3."
     }
   ]
 }

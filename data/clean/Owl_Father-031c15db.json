@@ -9,7 +9,7 @@
     {
       "heading": "Description",
       "level": 2,
-      "text": "Owl (Father)\nWolf\nAfter Wolf defeats Lady Butterfly, he was assassinated by Owl for his own selfish goals of obtaining the Dragon's Blood.\nBeing younger, Owl is exceedingly stronger and faster and still possesses his magical abilities."
+      "text": "After Wolf defeats Lady Butterfly, he was assassinated by Owl for his own selfish goals of obtaining the Dragon's Blood.\nBeing younger, Owl is exceedingly stronger and faster and still possesses his magical abilities."
     },
     {
       "heading": "Location",
@@ -20,6 +20,11 @@
       "heading": "Dialogue",
       "level": 2,
       "text": "Talking | Owl: That day... I pulled you from the battlefield, a starving cub... I had no idea what you'd become.\nWolf: Father...\nOwl: It breaks my heart... but I'm putting you down!\nAttacked before talking | Owl: Very well!\nFirs time using a Prosthetic Tool | Owl: The shinobi prosthetic... this was once... Curious device you have there...\nAfter first deathblow | Owl: What a fine specimen you've become, Wolf. Allow me to honour your efforts... and show you this old Owl's true power!\nDefeating Wolf | Owl: Good riddance...starving wolf.\nAfter final deathblow | Wolf: Farewell...\nOwl: Defeated by my own son? The feeling is not entirely unpleasant..."
+    },
+    {
+      "heading": "Phases",
+      "level": 2,
+      "text": "This boss fight has 2 phases: Phase 1, Phase 2."
     }
   ]
 }

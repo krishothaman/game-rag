@@ -196,3 +196,34 @@ def test_strategy_headings_are_dropped_whatever_they_are_called():
 def test_stray_gallery_label_is_dropped():
     html = "<h2>Notes</h2><p>Kept.</p><div>Gallery</div><p>A caption.</p>"
     assert clean_html(html) == [Section(heading="Notes", level=2, text="Kept.")]
+
+
+STRAY_HTML = """
+<div class="mw-parser-output">
+<h2><span class="mw-headline" id="Description">Description</span></h2>
+<b>Emma</b>
+<a href="/wiki/Isshin">Isshin Ashina</a>
+<p>Emma is a doctor who served Isshin.</p>
+</div>
+"""
+
+BOSS_HTML = """
+<div class="mw-parser-output">
+<h2><span class="mw-headline" id="Introduction">Introduction</span></h2>
+<p>The Guardian Ape guards the Lotus of the Palace.</p>
+<h2><span class="mw-headline" id="Phase_1">Phase 1</span></h2>
+<p>Dodge the sweep.</p>
+<h2><span class="mw-headline" id="Phase_2">Phase 2</span></h2>
+<p>It picks up its head.</p>
+</div>
+"""
+
+
+def test_stray_link_and_bold_names_are_dropped():
+    assert sections_by_heading(STRAY_HTML)["Description"].text == "Emma is a doctor who served Isshin."
+
+
+def test_boss_phases_are_counted_even_though_the_moves_are_dropped():
+    sections = sections_by_heading(BOSS_HTML)
+    assert "Phase 1" not in sections
+    assert sections["Phases"].text == "This boss fight has 2 phases: Phase 1, Phase 2."
