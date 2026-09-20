@@ -10,7 +10,7 @@
     {
       "heading": "Description",
       "level": 2,
-      "text": "Gyoubu Masataka Oniwa\nBoss\nDefeating him is the only way to access Ashina Castle, where Kuro is waiting for Wolf to rescue him."
+      "text": "Defeating him is the only way to access Ashina Castle, where Kuro is waiting for Wolf to rescue him."
     },
     {
       "heading": "Lore",
@@ -26,6 +26,11 @@
       "heading": "Dialogue",
       "level": 2,
       "text": "Engaging | Gyoubu: My name... is Gyoubu Masataka Oniwa! As I breathe, you will not pass the castle gate! Move in haste and die, brat.\nWolf: So that's Gyoubu the Demon.\nDuring the fight | Gyoubu:\nOnikage, Charge!!\nBoy, allow me to show you the wrath of a man... who stood with the Ashina when they took this country!\nUpon resurrection | Gyoubu:\nOh ho, you're still standing? I'll strike you as many times as it takes!\nStill you stand? Genichiro has many burdens... And I consider you one of them.\nDefeating Wolf | Gyoubu: The castle gate remains closed. My work here is done.\nAfter first Deathblow | Gyoubu: You will not take this Gyoubu's head!\nFinal Deathblow | Wolf: Forgive me...!\nGyoubu: Genichiro... forgive... me."
+    },
+    {
+      "heading": "Phases",
+      "level": 2,
+      "text": "This boss fight has 2 phases: Phase 1, Phase 2."
     }
   ]
 }

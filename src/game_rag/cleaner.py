@@ -20,6 +20,9 @@ JUNK = [
 
 NAV_LINK_SHARE = 0.5
 
+# loose <b>Name</b> / <a>Name</a> sitting between paragraphs: page furniture, not prose
+INLINE_TAGS = {"a", "b", "i", "em", "strong", "span", "small", "sup", "sub", "font"}
+
 TITLE_MAX_CHARS = 40
 
 
@@ -86,9 +89,12 @@ def clean_html(html, dropped_sections=config.DROPPED_SECTIONS):
     heading, level, parts = "Introduction", 1, []
     keeping = True
     dropped_level = None
+    phases = []
 
     for child in root.children:
         if not isinstance(child, Tag):
+            continue
+        if child.name in INLINE_TAGS:
             continue
         if child.name in ("table", "div") and is_navigation(child):
             continue
@@ -97,6 +103,8 @@ def clean_html(html, dropped_sections=config.DROPPED_SECTIONS):
         if found:
             add_section(sections, heading, level, parts, keeping)
             new_level, new_heading = found
+            if new_heading.lower().startswith("phase ") and new_heading not in phases:
+                phases.append(new_heading)
            
             if dropped_level is not None and new_level > dropped_level:
                 keeping = False
@@ -117,7 +125,15 @@ def clean_html(html, dropped_sections=config.DROPPED_SECTIONS):
                 parts.append(text)
 
     add_section(sections, heading, level, parts, keeping)
+    add_phase_count(sections, phases)
     return sections
+
+
+def add_phase_count(sections, phases):
+    # the moves get dropped, but "this boss has 2 phases" is lore worth keeping
+    if len(phases) > 1:
+        sections.append(Section(heading="Phases", level=2,
+                                text=f"This boss fight has {len(phases)} phases: {', '.join(phases)}."))
 
 
 def add_section(sections, heading, level, parts, keeping):
