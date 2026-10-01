@@ -5,6 +5,7 @@ from chromadb.config import Settings
 
 from game_rag import config
 from game_rag.chunker import Chunk
+from game_rag.keywords import KeywordIndex, fuse
 
 
 @dataclass
@@ -24,6 +25,7 @@ class Library:
         self.collection = self.client.get_or_create_collection(
             name=name, metadata={"hnsw:space": "cosine"}, embedding_function=None,
         )
+        self.keywords = None
 
     def count(self):
         return self.collection.count()
@@ -45,15 +47,29 @@ class Library:
                 metadatas=labels,
             )
             log(f"  embedded {min(i + batch, len(chunks))}/{len(chunks)} chunks")
+        self.keywords = None
 
-    def search(self, question, k=config.TOP_K):
+    def search(self, question, k=config.TOP_K, hybrid=config.HYBRID):
         total = self.count()
         if total == 0:
             return []
+        # rank every chunk by meaning, it's only ~600 so that's cheap
         result = self.collection.query(
             query_embeddings=[self.embedder.embed_query(question)],
-            n_results=min(k, total),
+            n_results=total,
             include=["documents", "metadatas", "distances"],
         )
         found = zip(result["ids"][0], result["documents"][0], result["metadatas"][0], result["distances"][0])
-        return [Hit(chunk=Chunk(id=i, text=text, **meta), distance=d) for i, text, meta, d in found]
+        hits = {i: Hit(chunk=Chunk(id=i, text=text, **meta), distance=d) for i, text, meta, d in found}
+        by_meaning = list(hits)
+        if not hybrid:
+            return [hits[i] for i in by_meaning[:k]]
+        by_keywords = self.keyword_ranking(question, hits)
+        return [hits[i] for i in fuse([by_meaning[:config.FUSE_DEPTH], by_keywords])[:k]]
+
+    def keyword_ranking(self, question, hits):
+        if self.keywords is None:
+            self.keyword_ids = sorted(hits)
+            docs = [hits[i].chunk.embed_text for i in self.keyword_ids]
+            self.keywords = KeywordIndex(docs)
+        return [self.keyword_ids[n] for n in self.keywords.top(question, config.FUSE_DEPTH)]

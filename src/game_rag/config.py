@@ -37,6 +37,9 @@ CHUNK_OVERLAP = 50
 TOP_K = 5
 LIBRARY_DIR = PROJECT_ROOT / "data" / "library"
 COLLECTION = "sekiro"
+# level 5: mix meaning search with keyword (bm25) search, each gives its top FUSE_DEPTH
+HYBRID = True
+FUSE_DEPTH = 20
 GOLDEN_FILE = PROJECT_ROOT / "data" / "golden" / "sekiro.jsonl"
 VERDICTS_FILE = PROJECT_ROOT / "data" / "golden" / "sekiro-verdicts.json"
 # locked questions we never tune against, only scored at the end of a level

@@ -63,3 +63,14 @@ def test_rebuild_embeds_chunks_with_their_page_header(tmp_path):
     embedder.embed_documents = lambda texts: seen.extend(texts) or [embedder.vector(t) for t in texts]
     Library(embedder, path=tmp_path).rebuild(CHUNKS, log=lambda m: None)
     assert seen[1] == "Owl > Overview\nOwl is the foster father of Wolf. Owl is a great shinobi."
+
+
+def test_hybrid_search_finds_a_rare_word_the_embedder_misses(tmp_path):
+    chunks = CHUNKS + [
+        chunk(3, "A quiet temple high in the mountains.", "Temple"),
+        chunk(4, "Lady Butterfly trained the young shinobi in illusions with a sword.", "Lady Butterfly"),
+    ]
+    library = Library(FakeEmbedder(), path=tmp_path)
+    library.rebuild(chunks, log=lambda m: None)
+    assert library.search("butterfly illusions", k=1, hybrid=False)[0].chunk.page_title == "Temple"
+    assert library.search("butterfly illusions", k=1)[0].chunk.page_title == "Lady Butterfly"
