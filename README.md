@@ -10,12 +10,12 @@ You need Python 3.12+, [uv](https://docs.astral.sh/uv/) and Ollama.
 
 ```bash
 uv sync
-ollama pull qwen3.5:4b
+ollama pull qwen3.5:9b
 ollama pull qwen3-embedding:0.6b
 uv run python -m game_rag index
 ```
 
-`index` takes about half a minute. The cleaned wiki pages are already in the repo, so you don't need to download anything else.
+`index` takes about half a minute. The 9B chat model needs a GPU with about 8 GB of memory; on a smaller one, `ollama pull qwen3.5:4b` and add `--model qwen3.5:4b` to the commands below (it's a bit less accurate). The cleaned wiki pages are already in the repo, so you don't need to download anything else.
 
 ## Use it
 
@@ -35,7 +35,7 @@ If the wiki doesn't cover something, it says so instead of making it up.
 2. Sections are packed into chunks of up to 300 words, each labelled with its page and section.
 3. Chunks are embedded with `qwen3-embedding:0.6b` and stored in ChromaDB.
 4. A question is searched two ways, by meaning (embeddings) and by keywords (BM25), and the two rankings are merged.
-5. The top 5 chunks go to `qwen3.5:4b`, which has to answer only from them, quoting and citing `[n]`.
+5. The top 5 chunks go to `qwen3.5:9b`, which has to answer only from them, quoting and citing `[n]`.
 
 ## Measuring it
 

@@ -28,7 +28,8 @@ STATS_FILE = PROJECT_ROOT / "data" / "stats.json"
 
 # level 1 rag settings
 GAME = "Sekiro"
-CHAT_MODEL = "qwen3.5:4b"
+# 9b answered 13/15 vs 12/15 for 4b, needs ~6gb of gpu memory. use --model qwen3.5:4b on smaller gpus
+CHAT_MODEL = "qwen3.5:9b"
 EMBED_MODEL = "qwen3-embedding:0.6b"
 # qwen3-embedding wants questions to come with a little instruction in front, documents go in plain
 QUERY_INSTRUCTION = "Instruct: Given a question about Sekiro lore, retrieve wiki passages that answer it\nQuery: "
