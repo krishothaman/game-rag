@@ -13,3 +13,13 @@
 {"id": 13, "question": "What does a Gourd Seed do?", "facts": ["give it to Emma", "increases the max uses of the Healing Gourd"], "pages": ["Gourd Seed"]}
 {"id": 14, "question": "Who was the Sculptor before he became a sculptor?", "facts": ["a shinobi named Orangutan", "Isshin cut off his arm to stop him becoming Shura"], "pages": ["Sculptor"]}
 {"id": 15, "question": "What was the name of Wolf's mother?", "facts": [], "pages": [], "not_covered": true}
+{"id": 16, "question": "Who taught Genichiro how to fight?", "facts": ["Tomoe", "his mentor, he took her style / lightning"], "pages": ["Tomoe"]}
+{"id": 17, "question": "Why is the Guardian Ape so protective of the lotus flower?", "facts": ["its smell attracts female apes", "he was saving it for his bride"], "pages": ["Lotus of the Palace", "Guardian Ape"]}
+{"id": 18, "question": "Where's the Shelter Stone and what is it for?", "facts": ["on an altar deep in the village of the water-dwellers", "an incense ingredient Kuro needs for Immortal Severance"], "pages": ["Shelter Stone"]}
+{"id": 19, "question": "How do I cure Dragonrot for everyone?", "facts": ["get a Dragonrot Blood Sample and give it to Emma", "she makes a cure (Dragon's Blood Droplet)"], "pages": ["Dragonrot Blood Sample", "Emma"]}
+{"id": 20, "question": "What's the deal with Hanbei at the temple?", "facts": ["a veteran samurai who is Infested and can't die normally", "offers to be Wolf's sparring partner"], "pages": ["Hanbei the Undying"]}
+{"id": 21, "question": "What do I do with the Young Lord's Bell Charm?", "facts": ["offer it at the Buddha statue in the Dilapidated Temple", "it opens the Hirata Estate memory"], "pages": ["Young Lord's Bell Charm"]}
+{"id": 22, "question": "Who started the Ashina Clan?", "facts": ["Isshin Ashina"], "pages": ["Ashina Clan"]}
+{"id": 23, "question": "How does Isshin show up young for the last fight?", "facts": ["Genichiro summons him with the black Mortal Blade", "after Wolf beats Genichiro in the Silvergrass Field"], "pages": ["Isshin, the Sword Saint"]}
+{"id": 24, "question": "What is the name of Isshin's son?", "facts": [], "pages": [], "not_covered": true}
+{"id": 25, "question": "How tall is the Demon of Hatred?", "facts": [], "pages": [], "not_covered": true}
