@@ -31,11 +31,14 @@ def main(argv=None):
     ask = commands.add_parser("ask", help="ask one question")
     ask.add_argument("question")
     ask.add_argument("--debug", action="store_true", help="show the chunks that were found")
+    ask.add_argument("--model", default=config.CHAT_MODEL, help="ollama chat model to answer with")
     chat = commands.add_parser("chat", help="keep asking questions until you type exit")
     chat.add_argument("--debug", action="store_true", help="show the chunks that were found")
+    chat.add_argument("--model", default=config.CHAT_MODEL, help="ollama chat model to answer with")
     score = commands.add_parser("score", help="run the golden questions and score the rag")
     score.add_argument("--answers", action="store_true", help="also answer each question and let you judge it")
     score.add_argument("--holdout", action="store_true", help="use the locked held-out questions (end of a level only)")
+    score.add_argument("--model", default=config.CHAT_MODEL, help="ollama chat model to answer with")
     args = parser.parse_args(argv)
 
     try:
@@ -48,11 +51,11 @@ def main(argv=None):
         if args.command == "index":
             return run_index()
         if args.command == "ask":
-            return run_ask(args.question, args.debug)
+            return run_ask(args.question, args.debug, args.model)
         if args.command == "chat":
-            return run_chat(args.debug)
+            return run_chat(args.debug, args.model)
         if args.command == "score":
-            return run_score(args.answers, holdout=args.holdout)
+            return run_score(args.answers, holdout=args.holdout, model=args.model)
         return run_show(args.title)
     except ConnectionError:
         print("Can't reach Ollama. Open the Ollama app (or run `ollama serve`) and try again.")
@@ -121,8 +124,8 @@ def make_library():
     return Library(Embedder())
 
 
-def make_answerer():
-    return Answerer()
+def make_answerer(model=config.CHAT_MODEL):
+    return Answerer(model=model)
 
 
 def run_index():
@@ -137,20 +140,20 @@ def run_index():
     return 0
 
 
-def run_ask(question, debug):
+def run_ask(question, debug, model=config.CHAT_MODEL):
     library = make_library()
     if library.count() == 0:
         print("The library is empty. Run `uv run python -m game_rag index` first.")
         return 1
-    return answer_question(question, library, make_answerer(), debug)
+    return answer_question(question, library, make_answerer(model), debug)
 
 
-def run_chat(debug):
+def run_chat(debug, model=config.CHAT_MODEL):
     library = make_library()
     if library.count() == 0:
         print("The library is empty. Run `uv run python -m game_rag index` first.")
         return 1
-    answerer = make_answerer()
+    answerer = make_answerer(model)
     print("Ask about Sekiro lore. Type exit to quit.\n")
     while True:
         try:
@@ -164,7 +167,7 @@ def run_chat(debug):
         print()
 
 
-def run_score(with_answers=False, ask=input, holdout=False):
+def run_score(with_answers=False, ask=input, holdout=False, model=config.CHAT_MODEL):
     library = make_library()
     if library.count() == 0:
         print("The library is empty. Run `uv run python -m game_rag index` first.")
@@ -191,7 +194,7 @@ def run_score(with_answers=False, ask=input, holdout=False):
     if not with_answers:
         return 0
 
-    answerer = make_answerer()
+    answerer = make_answerer(model)
     verdicts = load_verdicts(verdicts_file)
     correct = 0
     for q in golden:

@@ -54,14 +54,14 @@ def test_debug_mode_shows_every_retrieved_chunk(capsys):
 
 def test_ask_with_empty_library_says_to_run_index(monkeypatch, capsys):
     monkeypatch.setattr(cli, "make_library", lambda: FakeLibrary([]))
-    monkeypatch.setattr(cli, "make_answerer", lambda: FakeAnswerer("unused"))
+    monkeypatch.setattr(cli, "make_answerer", lambda model=None: FakeAnswerer("unused"))
     assert cli.main(["ask", "What is Dragonrot?"]) == 1
     assert "index" in capsys.readouterr().out
 
 
 def test_ollama_not_running_gets_a_friendly_message(monkeypatch, capsys):
     monkeypatch.setattr(cli, "make_library", lambda: FakeLibrary(HITS))
-    monkeypatch.setattr(cli, "make_answerer", lambda: FakeAnswerer(error=ConnectionError("nope")))
+    monkeypatch.setattr(cli, "make_answerer", lambda model=None: FakeAnswerer(error=ConnectionError("nope")))
     assert cli.main(["ask", "What is Dragonrot?"]) == 1
     assert "Ollama" in capsys.readouterr().out
 
@@ -94,7 +94,7 @@ def test_score_with_answers_lets_you_judge_each_answer(monkeypatch, tmp_path, ca
     monkeypatch.setattr(cli.config, "GOLDEN_FILE", golden)
     monkeypatch.setattr(cli.config, "VERDICTS_FILE", tmp_path / "verdicts.json")
     monkeypatch.setattr(cli, "make_library", lambda: FakeLibrary(HITS))
-    monkeypatch.setattr(cli, "make_answerer", lambda: FakeAnswerer('An illness: "the illness that has gripped Ashina" [1]'))
+    monkeypatch.setattr(cli, "make_answerer", lambda model=None: FakeAnswerer('An illness: "the illness that has gripped Ashina" [1]'))
     replies = iter(["maybe", "y", "n"])
     assert cli.run_score(with_answers=True, ask=lambda prompt: next(replies)) == 0
     out = capsys.readouterr().out
@@ -111,7 +111,7 @@ def test_score_remembers_verdicts_and_only_asks_about_new_answers(monkeypatch, t
     monkeypatch.setattr(cli.config, "GOLDEN_FILE", golden)
     monkeypatch.setattr(cli.config, "VERDICTS_FILE", tmp_path / "verdicts.json")
     monkeypatch.setattr(cli, "make_library", lambda: FakeLibrary(HITS))
-    monkeypatch.setattr(cli, "make_answerer", lambda: FakeAnswerer("An illness [1]"))
+    monkeypatch.setattr(cli, "make_answerer", lambda model=None: FakeAnswerer("An illness [1]"))
     cli.run_score(with_answers=True, ask=lambda prompt: "y")
 
     def no_asking(prompt):
@@ -120,7 +120,7 @@ def test_score_remembers_verdicts_and_only_asks_about_new_answers(monkeypatch, t
     cli.run_score(with_answers=True, ask=no_asking)
     assert "judged before: y" in capsys.readouterr().out
 
-    monkeypatch.setattr(cli, "make_answerer", lambda: FakeAnswerer("Something new [1]"))
+    monkeypatch.setattr(cli, "make_answerer", lambda model=None: FakeAnswerer("Something new [1]"))
     cli.run_score(with_answers=True, ask=lambda prompt: "n")
     assert "Answers: 0/1 judged correct" in capsys.readouterr().out
 
@@ -134,10 +134,24 @@ def test_score_holdout_uses_its_own_questions_and_verdicts(monkeypatch, tmp_path
     monkeypatch.setattr(cli.config, "VERDICTS_FILE", tmp_path / "verdicts.json")
     monkeypatch.setattr(cli.config, "HOLDOUT_VERDICTS_FILE", tmp_path / "holdout-verdicts.json")
     monkeypatch.setattr(cli, "make_library", lambda: FakeLibrary(HITS))
-    monkeypatch.setattr(cli, "make_answerer", lambda: FakeAnswerer("Owl [1]"))
+    monkeypatch.setattr(cli, "make_answerer", lambda model=None: FakeAnswerer("Owl [1]"))
     assert cli.main(["score", "--holdout"]) == 0
     out = capsys.readouterr().out
     assert "#101" in out and "#1 " not in out
     cli.run_score(with_answers=True, ask=lambda prompt: "y", holdout=True)
     assert (tmp_path / "holdout-verdicts.json").exists()
     assert not (tmp_path / "verdicts.json").exists()
+
+
+def test_model_flag_picks_the_chat_model(monkeypatch, capsys):
+    picked = []
+
+    def fake_answerer(model=cli.config.CHAT_MODEL):
+        picked.append(model)
+        return FakeAnswerer("An illness [1]")
+
+    monkeypatch.setattr(cli, "make_library", lambda: FakeLibrary(HITS))
+    monkeypatch.setattr(cli, "make_answerer", fake_answerer)
+    cli.main(["ask", "What is Dragonrot?", "--model", "qwen3.5:9b"])
+    cli.main(["ask", "What is Dragonrot?"])
+    assert picked == ["qwen3.5:9b", cli.config.CHAT_MODEL]
