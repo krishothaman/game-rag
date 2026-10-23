@@ -593,8 +593,12 @@ source = { editable = "." }
 dependencies = [
     { name = "beautifulsoup4" },
     { name = "chromadb" },
+    { name = "huggingface-hub" },
+    { name = "numpy" },
     { name = "ollama" },
+    { name = "onnxruntime" },
     { name = "requests" },
+    { name = "tokenizers" },
 ]
 
 [package.dev-dependencies]
@@ -606,8 +610,12 @@ dev = [
 requires-dist = [
     { name = "beautifulsoup4", specifier = ">=4.15.0" },
     { name = "chromadb", specifier = ">=1.5.9" },
+    { name = "huggingface-hub", specifier = ">=1.31.0" },
+    { name = "numpy", specifier = ">=2.5.3" },
     { name = "ollama", specifier = ">=0.6.2" },
+    { name = "onnxruntime", specifier = ">=1.30.0" },
     { name = "requests", specifier = ">=2.34.2" },
+    { name = "tokenizers", specifier = ">=0.23.2" },
 ]
 
 [package.metadata.requires-dev]

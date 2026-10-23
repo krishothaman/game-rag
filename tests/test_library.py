@@ -65,6 +65,26 @@ def test_rebuild_embeds_chunks_with_their_page_header(tmp_path):
     assert seen[1] == "Owl > Overview\nOwl is the foster father of Wolf. Owl is a great shinobi."
 
 
+class FakeReranker:
+    def __init__(self, favourite):
+        self.favourite = favourite
+        self.seen = []
+
+    def scores(self, question, texts):
+        self.seen = texts
+        return [1.0 if self.favourite in t else 0.0 for t in texts]
+
+
+def test_reranker_gets_the_last_word_on_the_order(tmp_path):
+    reranker = FakeReranker("Emma")
+    library = Library(FakeEmbedder(), path=tmp_path, reranker=reranker)
+    library.rebuild(CHUNKS, log=lambda m: None)
+    hits = library.search("what is dragonrot?", k=1)
+    assert hits[0].chunk.page_title == "Emma"
+    assert len(reranker.seen) == 3
+    assert reranker.seen[0].startswith("Rot Essence > Overview\n")
+
+
 def test_hybrid_search_finds_a_rare_word_the_embedder_misses(tmp_path):
     chunks = CHUNKS + [
         chunk(3, "A quiet temple high in the mountains.", "Temple"),

@@ -19,8 +19,9 @@ class Hit:
 
 
 class Library:
-    def __init__(self, embedder, path=config.LIBRARY_DIR, name=config.COLLECTION):
+    def __init__(self, embedder, path=config.LIBRARY_DIR, name=config.COLLECTION, reranker=None):
         self.embedder = embedder
+        self.reranker = reranker
         self.client = chromadb.PersistentClient(path=str(path), settings=Settings(anonymized_telemetry=False))
         self.collection = self.client.get_or_create_collection(
             name=name, metadata={"hnsw:space": "cosine"}, embedding_function=None,
@@ -61,11 +62,17 @@ class Library:
         )
         found = zip(result["ids"][0], result["documents"][0], result["metadatas"][0], result["distances"][0])
         hits = {i: Hit(chunk=Chunk(id=i, text=text, **meta), distance=d) for i, text, meta, d in found}
-        by_meaning = list(hits)
-        if not hybrid:
-            return [hits[i] for i in by_meaning[:k]]
-        by_keywords = self.keyword_ranking(question, hits)
-        return [hits[i] for i in fuse([by_meaning[:config.FUSE_DEPTH], by_keywords])[:k]]
+        ranking = list(hits)
+        if hybrid:
+            ranking = fuse([ranking[:config.FUSE_DEPTH], self.keyword_ranking(question, hits)])
+        if self.reranker is None:
+            return [hits[i] for i in ranking[:k]]
+        return self.rerank(question, [hits[i] for i in ranking[:config.RERANK_DEPTH]], k)
+
+    def rerank(self, question, candidates, k):
+        scores = self.reranker.scores(question, [h.chunk.embed_text for h in candidates])
+        order = sorted(range(len(candidates)), key=lambda n: -scores[n])
+        return [candidates[n] for n in order[:k]]
 
     def keyword_ranking(self, question, hits):
         if self.keywords is None:

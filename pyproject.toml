@@ -6,8 +6,12 @@ requires-python = ">=3.12"
 dependencies = [
     "beautifulsoup4>=4.15.0",
     "chromadb>=1.5.9",
+    "huggingface-hub>=1.31.0",
+    "numpy>=2.5.3",
     "ollama>=0.6.2",
+    "onnxruntime>=1.30.0",
     "requests>=2.34.2",
+    "tokenizers>=0.23.2",
 ]
 
 [build-system]

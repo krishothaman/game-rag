@@ -14,6 +14,7 @@ from game_rag.embedder import Embedder
 from game_rag.golden import load_golden, load_verdicts, pages_found, save_verdicts, verdict_key
 from game_rag.library import Library
 from game_rag.measure import measure
+from game_rag.reranker import Reranker
 from game_rag.titles import file_stem
 from game_rag.wiki_client import WikiClient
 
@@ -121,7 +122,7 @@ def run_show(title):
 
 
 def make_library():
-    return Library(Embedder())
+    return Library(Embedder(), reranker=Reranker() if config.RERANK else None)
 
 
 def make_answerer(model=config.CHAT_MODEL):

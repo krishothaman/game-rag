@@ -4,7 +4,7 @@ A running log of what changed and what it did to the scores. The per-level detai
 
 ## Scoreboard
 
-Dev set = 15 golden questions we tune against. Held-out = 10 locked questions we only check at the end of a step.
+Dev set = the golden questions we tune against (15 at first, 25 since Level 5). Held-out = 10 locked questions we only check at the end of a step.
 
 | Step | Retrieval (dev) | Answers (dev) | Answers (held-out) |
 |---|---|---|---|
@@ -12,7 +12,9 @@ Dev set = 15 golden questions we tune against. Held-out = 10 locked questions we
 | Level 3, chunking + cleaning | 10/11 | 10/15 | 9/10 |
 | Level 4.1, stricter prompt | 10/11 | 11/15 | 8/10 |
 | Level 5.1, hybrid search (still 4B) | 11/11 | 12/15 | 7/10 |
-| **Level 4.2, 9B model + hybrid search** | **11/11** | **13/15** | **9/10** |
+| Level 4.2, 9B model + hybrid search | 11/11 | 13/15 | 9/10 |
+| Level 4.2 again, dev grown to 25 | 19/19 | 22/25 | 9/10 |
+| **Level 5.2, + reranker** | **18/19** | **23/25** | **8/10** |
 
 An answer only counts if it's right **and** has no false claim in it. "Right fact plus one made-up extra" is a fail.
 
@@ -57,17 +59,28 @@ Dev retrieval went 10/11 → 11/11 ("how many endings" found an ending page agai
 
 Held-out #101 (Lady Butterfly) still misses. A word stemmer would probably fix it ("trained" vs "training"), but we spotted that by looking at a held-out question, so we're not allowed to tune for it. Fixes have to come from dev failures.
 
+**Growing the dev set.** Added 10 more dev questions (25 in total, 19 with an answer in the wiki). The 9B model scored 22/25 on it before any Level 5.2 change.
+
+**5.2 Reranker.** Search now picks 20 candidates and a small **cross-encoder** reads each one *together with* the question and gives it a score. We keep the 5 best.
+- Model: `cross-encoder/ms-marco-MiniLM-L6-v2`, 91 MB, free, runs on the CPU through `onnxruntime` (`src/game_rag/reranker.py`, about 30 lines). It downloads once from Hugging Face, then loads from disk with no account or token.
+- Why not rerank all 597 chunks? Search vectors are made ahead of time, but the reranker has to read question and chunk together, so it can only start once you ask. 20 chunks take ~0.4s; 597 would take ~15s.
+- Retrieval: dev 19/19 → 18/19 (lost #2 "how many endings", the counting question), held-out 7/8 → **8/8** (Lady Butterfly #101 found without tuning for it).
+- Answers: dev 22/25 → **23/25**. #1 (Emma in Shura) and #11 (Kuro in Immortal Severance) are fixed: the ending pages moved to the top, so the model stopped inventing how the scenes play out. #6 got worse (now implies one prayer bead is enough instead of four).
+- Held-out answers 9/10 → 8/10. #104 no longer invents a scene but gives a garbled reason. #107 (Dragonrot) quotes the wiki correctly but was marked n because we doubt the wiki's "four deaths" claim.
+- Cost: about 0.4s more per question on the CPU, small next to the answer itself. Kept.
+
 ## Things learned along the way
 - **Found ≠ right.** A right page in the top 5 doesn't mean the right chunk, and the right chunk doesn't mean a right answer.
 - **Every fix breaks something.** Chunk headers fixed the endings and broke the Sculptor question. Section chunking fixed the Sculptor and broke "how many endings". Only the score catches this.
 - **Counting questions** ("how many endings / bosses") don't work in simple RAG, because the answer is spread over many pages. Left alone on purpose.
 - **Your laptop is fine.** GPU peaked at 100% at 60°C on the 4B, 73°C on the 9B (throttling starts around 85°C). Crashes were RAM, from a 22 GB model once and from After Effects and Unreal another time.
 - **Bigger model beat more prompt rules.** Three extra prompt rules got +1; the 9B model got +1 on dev and +2 on held-out on top of that.
+- **Same pages, better order, better answer.** The reranker barely changed *which* pages were found, but putting the most on-topic chunk first fixed two answers. Small models lean hardest on the first excerpt.
 - **Search first, then answer.** Doing all the searches before all the answers stops the GPU swapping models, and took 10 answers from minutes to 21 seconds.
 
 ## Still broken and where it gets fixed
 | Problem | Questions | Fix |
 |---|---|---|
-| Model invents how a scene plays out | #11, held-out #104 | Level 5.2 reranker (fewer, better chunks) |
-| Held-out #101 page not found | held-out #101 | not tuned on purpose (held-out) |
+| Model garbles who did what | held-out #104 | open |
+| Answer drops a key detail (4 beads) | #6 | open |
 | Counting across pages | #2, #7 | later, maybe never in plain RAG |
