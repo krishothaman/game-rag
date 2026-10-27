@@ -23,3 +23,13 @@
 {"id": 23, "question": "How does Isshin show up young for the last fight?", "facts": ["Genichiro summons him with the black Mortal Blade", "after Wolf beats Genichiro in the Silvergrass Field"], "pages": ["Isshin, the Sword Saint"]}
 {"id": 24, "question": "What is the name of Isshin's son?", "facts": [], "pages": [], "not_covered": true}
 {"id": 25, "question": "How tall is the Demon of Hatred?", "facts": [], "pages": [], "not_covered": true}
+{"id": 26, "question": "Who gives Wolf the prosthetic arm after he loses his original arm to Genichiro?", "facts": ["the Sculptor", "the Shinobi Prosthetic", "at the Dilapidated Temple"], "pages": ["Sculptor"]}
+{"id": 27, "question": "What is the name of the young lord Sekiro is sworn to protect?", "facts": ["Kuro", "the Divine Heir"], "pages": ["Kuro, The Divine Heir"]}
+{"id": 28, "question": "How do I unlock the Loaded Shuriken prosthetic tool?", "facts": ["give the Shuriken Wheel to the Sculptor", "the Shuriken Wheel is in Ashina Outskirts after the Outskirts Wall - Gate Path Sculptor's Idol"], "pages": ["Loaded Shuriken"]}
+{"id": 29, "question": "What happens to my sen and skill experience when I die without Unseen Aid?", "facts": ["you lose Sen and Skill Experience", "Unseen Aid is what prevents that loss"], "pages": ["Rot Essence"]}
+{"id": 30, "question": "Which boss drops the Slender Finger that unlocks the Finger Whistle?", "facts": ["the Guardian Ape", "the Sculptor fits it as the Finger Whistle"], "pages": ["Finger Whistle", "Guardian Ape"]}
+{"id": 31, "question": "How many Shinobi Prosthetic Tools can I equip at once?", "facts": [], "pages": [], "not_covered": true}
+{"id": 32, "question": "What does the Finger Whistle do to enemies?", "facts": ["draws enemies to the whistle's location", "enrages beasts so they can't tell friend from foe"], "pages": ["Finger Whistle"]}
+{"id": 33, "question": "Why is the protagonist called Sekiro if his real name is never revealed?", "facts": ["the Tengu of Ashina gives him the name", "because of his prosthetic arm: a one-armed wolf"], "pages": ["The Tengu of Ashina"]}
+{"id": 34, "question": "Which boss do I have to defeat to obtain the Memory: Gyoubu Oniwa?", "facts": ["Gyoubu Masataka Oniwa", "keeper of the Ashina Castle Gate"], "pages": ["Gyoubu Masataka Oniwa", "Memories"]}
+{"id": 35, "question": "What item do I need to resurrect myself after dying if I have no resurrection charges available?", "facts": ["the wiki names no such item, so the answer must not invent one", "a node comes back after resting", "defeating several enemies or a deathblow on a Boss or Mini-Boss restores resurrection"], "pages": ["Dragon's Heritage"]}
