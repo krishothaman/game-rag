@@ -1,0 +1,62 @@
+
+=== #101 Who trained Wolf when he was a kid?
+ANSWER: Owl took the boy in as a foster son while having him trained (with the help of several co-mentors such as Lady Butterfly) to become a Shinobi [1].
+PAGES:  Sekiro, The Tengu of Ashina, Sekiro, The Tengu of Ashina, Monkey Booze
+SHOULD: Lady Butterfly; Owl gave her the job
+KNOWN:  -
+
+=== #102 What's special about the Mortal Blade?
+ANSWER: The Mortal Blade is an odachi capable of slaying the undying, and its crimson blade will take the life of any who dares draw it [2]. Without the power of Resurrection, one could not hope to wield this weapon, which allows one to defeat even infested beings [2]. It is required to draw Kuro's blood, one of the ingredients needed to reach the Divine Realm [2]. The blade gives Wolf the ability to sever the ties of immortality on creatures such as True Monk, Headless Ape, Hanbei the Undying, and Retrieving this item [2].
+PAGES:  Isshin Ashina, Mortal Blade, Black Scroll, The Divine Heir/Dialogue, Isshin, the Sword Saint
+SHOULD: it can kill the undying / sever immortality; it kills anyone who draws it without the power of Resurrection
+KNOWN:  -
+
+=== #103 What does Wolf do to himself in the Purification ending?
+ANSWER: In the Purification ending, Wolf beheads himself in order to sever the ties of immortality, freeing his Lord [1].
+PAGES:  Ending 3: Purification, Emma, Ending 3: Purification, Ending 2: Immortal Severance, Sekiro
+SHOULD: he beheads himself; to sever the ties of immortality and free Kuro
+KNOWN:  -
+
+=== #104 Why does Owl betray Wolf in the Hirata Estate memory?
+ANSWER: Owl betrays Wolf because he believes "The shinobi prosthetic... this was once... Curious device you have there" [4] and wants to obtain the power of the Divine Heir's blood. When Owl orders Wolf to obey the Iron Code, he states "As your father, I order you to forsake your master" [3]. Wolf agrees by saying "The code is absolute. I hereby forsake my master... the Divine Heir" [3], which leads Owl to conclude "With this, our supreme reign will..." [3].
+PAGES:  Owl, Hirata Estate, Great Shinobi - Owl, Owl (Father), Great Shinobi - Owl
+SHOULD: he wants the Dragon's Blood / Dragon's Heritage for himself
+KNOWN:  -
+
+=== #105 What is the Corrupted Monk guarding?
+ANSWER: The Corrupted Monk guards the entrance to the Wedding Cave Door where the Shelter Stone is enshrined [2]. She also served as the naginata wielding guardian of the Vermillion Bridge [1]. Her form appeared nebulous while guarding the Mibu Village cave entrance [3].
+PAGES:  True Monk, Corrupted Monk, Remnants, Main Hall Monk, Main Hall Monk
+SHOULD: the Wedding Cave Door; where the Shelter Stone is
+KNOWN:  -
+
+=== #106 Who invented the prosthetic arm?
+ANSWER: Dogen created the original prosthetic arm for the Sculptor [3]. The Sculptor later passed this invention on to Wolf as his own left arm [2].
+PAGES:  Sculptor, Sculptor, Sekiro, Dogen, Prosthetic Esoteric Text
+SHOULD: Dogen
+KNOWN:  -
+
+=== #107 How does Dragonrot spread?
+ANSWER: Dragonrot spreads when one known to Wolf is coughing and wheezing, as it is likely they are afflicted with the sickness [1]. The illness manifests after Wolf perishes definitely four times, at which point he suffers a certain number of deaths he doesn't resurrect from [1]. This occurs because repeated use of the Dragon's Heritage leads to stagnation, which eventually reaches a point where it "overflows" and causes those who do not have the power to become sick [3].
+PAGES:  Rot Essence, Rot Essence, Rot Essence, Old Palace Maids, Divine Child of Rejuvenation
+SHOULD: when Wolf dies for real, not when he resurrects
+KNOWN:  -
+
+=== #108 Who made the Healing Gourd?
+ANSWER: Emma made the Healing Gourd: "The gourd of medicinal water you possess... That was originally a creation of mine" [2].
+PAGES:  Gourd Seed, Emma, Dogen, The Divine Heir/Dialogue, Emma/Dialogue
+SHOULD: Emma; Dogen's apprentice
+KNOWN:  -
+
+=== #109 What is the name of Kuro's mother?
+ANSWER: My library doesn't cover that.
+PAGES:  Kuro, The Divine Heir, Kuro, The Divine Heir, Kuro, The Divine Heir, Kuro, The Divine Heir, Kuro, The Divine Heir
+SHOULD: My library doesn't cover that.
+KNOWN:  y
+
+=== #110 Who voices Wolf in the English version?
+ANSWER: My library doesn't cover that.
+PAGES:  Sekiro, The Tengu of Ashina, The Tengu of Ashina, Original Memory: Wolf, Great Shinobi - Owl
+SHOULD: My library doesn't cover that.
+KNOWN:  y
+
+MODEL qwen3.5:4b: 10 answers in 21s

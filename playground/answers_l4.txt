@@ -1,0 +1,90 @@
+
+=== #1 Does Emma die in the Shura ending?
+ANSWER: Emma does not die in the Shura ending; instead, Isshin kills her during their confrontation as stated by Isshin: "It seems... I must cut you down before you fall to Shura" [3].
+PAGES:  Emma, Emma, Isshin Ashina (Shura), Emma, Emma/Dialogue
+SHOULD: yes; Wolf kills her
+KNOWN:  -
+
+=== #2 How many endings does Sekiro have?
+ANSWER: My library doesn't cover that.
+PAGES:  Sekiro, Isshin Ashina (Shura), Sekiro, Isshin, the Sword Saint, Sekiro
+SHOULD: 4 endings; Shura; Immortal Severance; Purification; Return
+KNOWN:  n
+
+=== #3 Who is Emma?
+ANSWER: Emma is a doctor who saved a child named Kuro from a battlefield [1]. She was adopted by lord Dogen after being saved by the shinobi known as Orangutan [1]. Lord Isshin sent her to deliver a letter to Wolf at the beginning of the story [1].
+PAGES:  Emma, Emma, Emma, Emma/Dialogue, Emma
+SHOULD: a doctor; saved from a battlefield by the Sculptor; adopted by Lord Dogen; the Gentle Blade
+KNOWN:  -
+
+=== #4 How many phases does the Guardian Ape have?
+ANSWER: The Guardian Ape has 2 phases, as stated in the excerpt: "This boss fight has 2 phases: Phase 1, Phase 2" [1].
+PAGES:  Guardian Ape, Headless Ape, Valley Apparitions Memo, Sekiro Side Story: Hanbei the Undying Chapter 4, Sunken Valley
+SHOULD: 2 phases
+KNOWN:  -
+
+=== #5 Is Radahn the final boss in Elden Ring?
+ANSWER: My library doesn't cover that.
+PAGES:  Ending 1: Shura, Isshin Ashina (Shura), Shinobi Hunter Enshin of Misen, Genichiro Ashina, Ending 2: Immortal Severance
+SHOULD: My library doesn't cover that.
+KNOWN:  y
+
+=== #6 What are Prayer Beads?
+ANSWER: Prayer Beads are "A loose prayer bead" [1] that serve as an offering to increase maximum Vitality and Posture when given to a Sculptor's Idol. They can be converted into a Prayer Bead Necklace, which also increases maximum Vitality and Posture. In total, there are 40 Prayer Beads in the game.
+PAGES:  Prayer Bead, Prayer Bead, Father's Bell Charm, Prayer Bead, Sakura Droplet
+SHOULD: offer 4 at a Sculptor's Idol; increases max Vitality and Posture
+KNOWN:  -
+
+=== #7 How many main bosses are there in Sekiro?
+ANSWER: The provided excerpts do not state how many main bosses exist in the game. My library doesn't cover that.
+PAGES:  Sekiro, Isshin Ashina (Shura), Isshin, the Sword Saint, Sekiro, Sekiro
+SHOULD: My library doesn't cover that.
+KNOWN:  -
+
+=== #8 Who is Genichiro Ashina?
+ANSWER: Genichiro Ashina is the current leader of the Ashina Clan [1]. He is also the adopted grandson of Isshin Ashina [2]. Genichiro seeks to abduct Kuro and obtain the Divine Heir's gift of immortality [1]. His goal is to use this power to save both his beloved country and his clan [1].
+PAGES:  Genichiro Ashina, Ashina Clan, Isshin Ashina, Genichiro Ashina, Second Encounter, Genichiro Ashina, Second Encounter
+SHOULD: mandatory boss; adopted by the Ashina after his mother died; current leader of the Ashina Clan; wants Kuro's immortality
+KNOWN:  -
+
+=== #9 In the Shura ending, which two bosses do you fight?
+ANSWER: In Ending 1: Shura, Wolf must fight Emma, the Gentle Blade and Isshin Ashina. [2]
+PAGES:  Isshin Ashina (Shura), Ending 1: Shura, Isshin Ashina, Monkey Booze, Sekiro
+SHOULD: Emma, the Gentle Blade; Isshin Ashina
+KNOWN:  -
+
+=== #10 What happens to Radahn in the Elden Ring DLC?
+ANSWER: My library doesn't cover that.
+PAGES:  Divine Child of Rejuvenation, Sekiro, Emma, Doujun, Faithful One (Sunken Valley)
+SHOULD: My library doesn't cover that.
+KNOWN:  y
+
+=== #11 What happens to Kuro in the Immortal Severance ending?
+ANSWER: In the Immortal Severance ending, Wolf must stab Kuro in the heart with the Mortal Blade to sever the ties to immortality [5]. This act allows Wolf to give ONLY the Divine Dragon's Tears to Kuro before he dies [5]. Following these events, Wolf forsakes his prosthetic arm and the violence it enables [5].
+PAGES:  Immortal Severance Text, Kuro, The Divine Heir, Emma, Sekiro, Ending 2: Immortal Severance
+SHOULD: Wolf gives him only the Divine Dragon's Tears; Wolf stabs him with the Mortal Blade; his ties to immortality are severed
+KNOWN:  -
+
+=== #12 What do you give Kuro to get the Return ending?
+ANSWER: To obtain the Return ending, you must give Kuro the Frozen Tears and the Divine Dragon's Tears during the ending [2].
+PAGES:  Kuro, The Divine Heir, Ending 4: Return, Kuro, The Divine Heir, The Divine Heir/Dialogue, Faithful One
+SHOULD: Frozen Tears; Divine Dragon's Tears
+KNOWN:  -
+
+=== #13 What does a Gourd Seed do?
+ANSWER: A Gourd Seed is "Seed from which healing waters continuously spring forth" [1]. Giving these seeds to Emma increases the maximum uses of the Healing Gourd, as she explains that "Medicinal waters flow from Gourd Seeds" and "Adding new seeds will increase the volume of these medicinal waters" [1].
+PAGES:  Gourd Seed, Gourd Seed, Divine Child of Rejuvenation, Sekiro, Emma
+SHOULD: give it to Emma; increases the max uses of the Healing Gourd
+KNOWN:  -
+
+=== #14 Who was the Sculptor before he became a sculptor?
+ANSWER: He's later revealed to be a former shinobi named Orangutan [1].
+PAGES:  Sculptor, Sculptor, Sculptor, Sculptor, Sculptor
+SHOULD: a shinobi named Orangutan; Isshin cut off his arm to stop him becoming Shura
+KNOWN:  -
+
+=== #15 What was the name of Wolf's mother?
+ANSWER: My library doesn't cover that.
+PAGES:  Sekiro, The Tengu of Ashina, The Tengu of Ashina, Emma/Dialogue, Owl (Father)
+SHOULD: My library doesn't cover that.
+KNOWN:  y

@@ -1,0 +1,152 @@
+
+=== #1 Does Emma die in the Shura ending?
+ANSWER: Yes, Emma dies in the Shura ending. During the boss fight against Isshin and Wolf, after Wolf is killed, Isshin states, "Sekiro. This is farewell..." [4], and subsequently kills Emma as well. The text confirms her death by noting that Wolf can kneel over "Emma's Dead Body" [4].
+PAGES:  Emma, Emma, Emma/Dialogue, Isshin Ashina (Shura), Emma
+SHOULD: yes; Wolf kills her
+KNOWN:  -
+
+=== #2 How many endings does Sekiro have?
+ANSWER: My library doesn't cover that.
+PAGES:  Sekiro, Ending 1: Shura, Isshin, the Sword Saint, Isshin Ashina, Sekiro
+SHOULD: 4 endings; Shura; Immortal Severance; Purification; Return
+KNOWN:  n
+
+=== #3 Who is Emma?
+ANSWER: Emma is a doctor who serves a certain master whose identity she cannot reveal for his safety, stating, "I am a doctor serving a certain master" [2]. She explicitly identifies her allegiance by saying, "I am a doctor in the service of Lord Isshin" [1]. Regarding her combat skills, she admits to Wolf that she was trained by him, replying, "... Lord Isshin. But I only have a passing interest" [5].
+PAGES:  Emma/Dialogue, Emma/Dialogue, Emma/Dialogue, Emma/Dialogue, Emma
+SHOULD: a doctor; saved from a battlefield by the Sculptor; adopted by Lord Dogen; the Gentle Blade
+KNOWN:  y
+
+=== #4 How many phases does the Guardian Ape have?
+ANSWER: The Guardian Ape fight has two phases, as stated in the text: "This boss fight has 2 phases: Phase 1, Phase 2" [2]. Similarly, the Headless Ape also features a two-phase structure described by the line: "This boss fight has 2 phases: Phase 1, Phase 2" [1].
+PAGES:  Headless Ape, Guardian Ape, Valley Apparitions Memo, Sekiro Side Story: Hanbei the Undying Chapter 4, Sunken Valley
+SHOULD: 2 phases
+KNOWN:  y
+
+=== #5 Is Radahn the final boss in Elden Ring?
+ANSWER: My library doesn't cover that.
+PAGES:  Inner Genichiro, Shinobi Hunter Enshin of Misen, Inner Isshin, General Naomori Kawarada, General Tenzen Yamauchi
+SHOULD: My library doesn't cover that.
+KNOWN:  y
+
+=== #6 What are Prayer Beads?
+ANSWER: Prayer Beads are "A loose prayer bead" [1] that, when four of them are offered at a Sculptor's Idol, "will increase maximum Vitality and Posture" [1]. These beads can also be converted into a necklace which "increases maximum Vitality and Posture" [1], and there are "40 Prayer Beads in the game" [1]. Each bead sheds light on character stories, such as the First Prayer Necklace noting that "The ferocity of Ashina's army is renowned throughout the nation" [3] or the Ninth Prayer Necklace describing how "Robert's father came from afar across seas to the south, in search of the Undying" [4].
+PAGES:  Prayer Bead, Father's Bell Charm, Prayer Bead, Prayer Bead, Seven Ashina Spears - Shikibu Toshikatsu Yamauchi
+SHOULD: offer 4 at a Sculptor's Idol; increases max Vitality and Posture
+KNOWN:  y
+
+=== #7 How many main bosses are there in Sekiro?
+ANSWER: My library doesn't cover that.
+PAGES:  Sekiro, Sekiro, Sekiro, Sekiro Side Story: Hanbei the Undying Chapter 8, Isshin Ashina (Shura)
+SHOULD: My library doesn't cover that.
+KNOWN:  y
+
+=== #8 Who is Genichiro Ashina?
+ANSWER: Genichiro Ashina is "a character and mandatory boss in which the player is meant to lose" [1]. He is "the current leader of the Ashina Clan" who was "Adopted by the Ashina after the death of his peasant mother" [1]. As "the current leader of the clan and adopted grandson of Isshin," he sought to "kidnap the Divine Heir of the Dragon's Heritage and use the mysterious power of the Dragon's Heritage to gain an upper hand in the upcoming war" [2]. During their second encounter, Genichiro states, "Ashina, this land -- is everything to me. For her sake... I will shed humanity itself" [3].
+PAGES:  Genichiro Ashina, Ashina Clan, Genichiro Ashina, Second Encounter, Isshin, the Sword Saint, Genichiro Ashina, Second Encounter
+SHOULD: mandatory boss; adopted by the Ashina after his mother died; current leader of the Ashina Clan; wants Kuro's immortality
+KNOWN:  y
+
+=== #9 In the Shura ending, which two bosses do you fight?
+ANSWER: In the Shura ending, Wolf must fight Emma, the Gentle Blade and Isshin Ashina back to back. [1] After defeating Emma, Wolf then faces Isshin Ashina, who states, "I'll wager it was quite the sight" regarding Tomoe's fighting style before engaging in combat with Wolf. [3]
+PAGES:  Ending 1: Shura, Isshin Ashina (Shura), Isshin Ashina, Monkey Booze, Isshin Ashina
+SHOULD: Emma, the Gentle Blade; Isshin Ashina
+KNOWN:  y
+
+=== #10 What happens to Radahn in the Elden Ring DLC?
+ANSWER: My library doesn't cover that.
+PAGES:  Divine Child of Rejuvenation, Sculptor, Sekiro, Finger Whistle, Emma
+SHOULD: My library doesn't cover that.
+KNOWN:  y
+
+=== #11 What happens to Kuro in the Immortal Severance ending?
+ANSWER: In the Immortal Severance ending, Wolf must "give ONLY the Divine Dragon's Tears to Kuro and stab him in the heart with the Mortal Blade to sever the ties to immortality" [3]. Following this act, Wolf "forsakes his prosthetic arm and the violence it enables" and returns to the Dilapidated Temple [3]. This path is chosen where Wolf agrees that "Lord Kuro need not lose his life" by finding a way where he does not die in the traditional sense of death, but rather ends his immortality through the ritual [2][3].
+PAGES:  Immortal Severance Text, Emma, Ending 2: Immortal Severance, Emma/Dialogue, Kuro, The Divine Heir
+SHOULD: Wolf gives him only the Divine Dragon's Tears; Wolf stabs him with the Mortal Blade; his ties to immortality are severed
+KNOWN:  n
+
+=== #12 What do you give Kuro to get the Return ending?
+ANSWER: To achieve the Return ending, you must give Kuro the Frozen Tears and the Divine Dragon's Tears during the ending [1]. Additionally, you are required to obtain Holy Chapter: Infested [1] and retrieve the dried and fresh fruits of the Serpent for her to get her Frozen Tears [1]. You also need to deliver Rice for Kuro and receive Sweet Rice Balls in return [4], which is given by the Divine Child of Rejuvenation after she is cured of her sickness with a Persimmon or Taro Persimmon [4]. Finally, you must defeat Isshin, the Sword Saint [1] and give Kuro the Frozen Tears and the Divine Dragon's Tears during the ending [1].
+PAGES:  Ending 4: Return, The Divine Heir/Dialogue, Kuro, The Divine Heir, Kuro, The Divine Heir, Rice for Kuro
+SHOULD: Frozen Tears; Divine Dragon's Tears
+KNOWN:  y
+
+=== #13 What does a Gourd Seed do?
+ANSWER: A Gourd Seed is a "Seed from which healing waters continuously spring forth" [1]. When given to Emma, she states that planting it causes the seed to be put into the gourd so that "the volume of medicinal waters in your gourd will increase" [3].
+PAGES:  Gourd Seed, Gourd Seed, Emma, Emma, Emma/Dialogue
+SHOULD: give it to Emma; increases the max uses of the Healing Gourd
+KNOWN:  y
+
+=== #14 Who was the Sculptor before he became a sculptor?
+ANSWER: He's later revealed to be a former shinobi named Orangutan (猩々), who became the new sculptor of the temple to repay his karmic debt [1].
+PAGES:  Sculptor, Sculptor, Sekiro Side Story: Hanbei the Undying Chapter 8, Sculptor, Sculptor
+SHOULD: a shinobi named Orangutan; Isshin cut off his arm to stop him becoming Shura
+KNOWN:  y
+
+=== #15 What was the name of Wolf's mother?
+ANSWER: My library doesn't cover that.
+PAGES:  The Tengu of Ashina, Original Memory: Wolf, Sekiro, Inosuke Nogami, Inosuke Nogami
+SHOULD: My library doesn't cover that.
+KNOWN:  y
+
+=== #16 Who taught Genichiro how to fight?
+ANSWER: Tomoe taught Genichiro how to fight, as she was "Genichiro's mentor" [5]. Lord Genichiro adopted her swordfighting style, known as the "School of Tomoe" [5]. Isshin Ashina also notes that Genichiro mastered lightning from his mentor, Tomoe [5].
+PAGES:  Genichiro Ashina, Genichiro Ashina, Second Encounter, Isshin Ashina, Inner Genichiro, Tomoe
+SHOULD: Tomoe; his mentor, he took her style / lightning
+KNOWN:  -
+
+=== #17 Why is the Guardian Ape so protective of the lotus flower?
+ANSWER: The Guardian Ape protects the Lotus of the Palace because "the flower's aroma attracts female apes" and he tends to it "so as to offer it to his bride" [2]. He hopes to use the flower "to offer it his new mate" while guarding it in the Sunken Valley [1].
+PAGES:  Guardian Ape, Lotus of the Palace, Sunken Valley, Sunken Valley, Headless Ape
+SHOULD: its smell attracts female apes; he was saving it for his bride
+KNOWN:  -
+
+=== #18 Where's the Shelter Stone and what is it for?
+ANSWER: The Shelter Stone is "A stone found on an altar deep within the village of the water-dwellers" [1] and serves as "One of the incense ingredients sought by the Divine Heir for Immortal Severance" [1]. It is specifically given to Kuro as "an ingredient needed to reach the Divine Realm" [1], and its location is described in a note as "A fragrant stone, enshrined in a village within the depths of Ashina" [2].
+PAGES:  Shelter Stone, Okami's Ancient Text, Corrupted Monk, The Divine Heir/Dialogue, The Divine Heir/Dialogue
+SHOULD: on an altar deep in the village of the water-dwellers; an incense ingredient Kuro needs for Immortal Severance
+KNOWN:  -
+
+=== #19 How do I cure Dragonrot for everyone?
+ANSWER: To cure Dragonrot for everyone, you must first give Emma a Dragonrot Blood Sample so she can create a Recovery Charm and a Dragon's Blood Droplet [2]. Once you have these items, the Recovery Charm allows Dragonrot sufferers to be healed from a Sculptor's Idol, while a Dragon's Blood Droplet can be consumed to heal Dragonrot from all those afflicted [3]. Doing so will cause all Rot Essence to disappear, returning the chances of receiving Unseen Aid to the default value [3].
+PAGES:  Rot Essence, Dragonrot Blood Sample, Rot Essence, Rot Essence, Recovery Charm
+SHOULD: get a Dragonrot Blood Sample and give it to Emma; she makes a cure (Dragon's Blood Droplet)
+KNOWN:  -
+
+=== #20 What's the deal with Hanbei at the temple?
+ANSWER: Hanbei is a veteran samurai who became an "Infested," a being who cannot perish through normal means [5]. He explains that he has nowhere to go and fits the description of someone who attracts those with nowhere else to go [2]. Hanbei states, "This temple attracts those with nowhere else to go. I certainly fit that description" [3]. He volunteers himself as Wolf's sparring partner because "A warm body that can't die might prove useful to you" [5]. Regarding his time there, he says, "Half to pass the time... And the other half... well... I want to loosen that furrowed brow of yours" [2].
+PAGES:  Sekiro Side Story: Hanbei the Undying Chapter 8, Hanbei the Undying, Hanbei the Undying, Hanbei the Undying, Hanbei the Undying
+SHOULD: a veteran samurai who is Infested and can't die normally; offers to be Wolf's sparring partner
+KNOWN:  -
+
+=== #21 What do I do with the Young Lord's Bell Charm?
+ANSWER: To use the Young Lord's Bell Charm, you must offer it to Buddha at the Dilapidated Temple, as "Bell charms protect their holders through Buddha's divine protection" [1]. This action is required to unlock the Hirata Estate memory by interacting with the Buddha statue there [1]. If this item isn't retrieved prior to the final invasion of Ashina Castle and Outskirts by the Central Forces, it won't be obtainable for the rest of the playthrough because "the Timid Maid will be found dead" [1].
+PAGES:  Young Lord's Bell Charm, Father's Bell Charm, Timid Maid, Timid Maid, Juzou the Drunkard
+SHOULD: offer it at the Buddha statue in the Dilapidated Temple; it opens the Hirata Estate memory
+KNOWN:  -
+
+=== #22 Who started the Ashina Clan?
+ANSWER: The Ashina Clan was founded by Isshin Ashina, a legendary swordsman lauded as the hero of the north [1].
+PAGES:  Ashina Clan, Sekiro Side Story: Hanbei the Undying Chapter 5, Genichiro Ashina, Sekiro Side Story: Hanbei the Undying Chapter 6, Ashina Elite - Ujinari Mizuo
+SHOULD: Isshin Ashina
+KNOWN:  -
+
+=== #23 How does Isshin show up young for the last fight?
+ANSWER: Wolf meets Genichiro for the last time in the Silvergrass Field where they first fought. Upon defeat, Genichiro uses the black Mortal Blade to summon a younger version of Isshin Ashina from the beyond [5].
+PAGES:  Isshin, the Sword Saint, Remnants, Isshin Ashina, Sekiro Side Story: Hanbei the Undying Chapter 1, Isshin, the Sword Saint
+SHOULD: Genichiro summons him with the black Mortal Blade; after Wolf beats Genichiro in the Silvergrass Field
+KNOWN:  -
+
+=== #24 What is the name of Isshin's son?
+ANSWER: My library doesn't cover that.
+PAGES:  Isshin Ashina, Isshin Ashina, Emma/Dialogue, Isshin Ashina, Isshin, the Sword Saint
+SHOULD: My library doesn't cover that.
+KNOWN:  -
+
+=== #25 How tall is the Demon of Hatred?
+ANSWER: My library doesn't cover that.
+PAGES:  Demon of Hatred, Shura Storyteller, Shura Storyteller, Shura Storyteller, Remnants
+SHOULD: My library doesn't cover that.
+KNOWN:  -
+
+MODEL qwen3.5:9b: 25 answers in 101s
